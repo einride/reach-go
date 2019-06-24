@@ -15,37 +15,46 @@ import (
 )
 
 func TestScanner_HexDump(t *testing.T) {
-	const inputFile = "testdata/hexdump"
-	const goldenFile = inputFile + ".golden"
-	data := loadHexDump(t, "testdata/hexdump")
-	sc := NewScanner(bytes.NewReader(data))
-	var buf bytes.Buffer
-	for sc.Scan() {
-		switch sc.ID() {
-		case IDVER:
-			_, _ = fmt.Fprintf(&buf, "%v: %+v\n", sc.ID(), sc.VER())
-		case IDPOS:
-			_, _ = fmt.Fprintf(&buf, "%v: %+v\n", sc.ID(), sc.POS())
-		case IDSTAT:
-			_, _ = fmt.Fprintf(&buf, "%v: %+v\n", sc.ID(), sc.STAT())
-		case IDDOPS:
-			_, _ = fmt.Fprintf(&buf, "%v: %+v\n", sc.ID(), sc.DOPS())
-		case IDVEL:
-			_, _ = fmt.Fprintf(&buf, "%v: %+v\n", sc.ID(), sc.VEL())
-		case IDSVI:
-			_, _ = fmt.Fprintf(&buf, "%v: %+v\n", sc.ID(), sc.SVI())
-			for sc.ScanSVI() {
-				_, _ = fmt.Fprintf(&buf, "%v: %+v\n", sc.ID(), sc.SV())
+	for _, tt := range []struct {
+		inputFile  string
+		goldenFile string
+	}{
+		{inputFile: "testdata/hexdump.empty", goldenFile: "testdata/hexdump.empty.golden"},
+		{inputFile: "testdata/hexdump.asta", goldenFile: "testdata/hexdump.asta.golden"},
+	} {
+		tt := tt
+		t.Run(tt.inputFile, func(t *testing.T) {
+			data := loadHexDump(t, tt.inputFile)
+			sc := NewScanner(bytes.NewReader(data))
+			var buf bytes.Buffer
+			for sc.Scan() {
+				switch sc.ID() {
+				case IDVER:
+					_, _ = fmt.Fprintf(&buf, "%v: %+v\n", sc.ID(), sc.VER())
+				case IDPOS:
+					_, _ = fmt.Fprintf(&buf, "%v: %+v\n", sc.ID(), sc.POS())
+				case IDSTAT:
+					_, _ = fmt.Fprintf(&buf, "%v: %+v\n", sc.ID(), sc.STAT())
+				case IDDOPS:
+					_, _ = fmt.Fprintf(&buf, "%v: %+v\n", sc.ID(), sc.DOPS())
+				case IDVEL:
+					_, _ = fmt.Fprintf(&buf, "%v: %+v\n", sc.ID(), sc.VEL())
+				case IDSVI:
+					_, _ = fmt.Fprintf(&buf, "%v: %+v\n", sc.ID(), sc.SVI())
+					for sc.ScanSVI() {
+						_, _ = fmt.Fprintf(&buf, "%v: %+v\n", sc.ID(), sc.SV())
+					}
+				default:
+					_, _ = fmt.Fprintf(&buf, "%v: %s\n", sc.ID(), hex.EncodeToString(sc.Bytes()))
+				}
 			}
-		default:
-			_, _ = fmt.Fprintf(&buf, "%v: %s\n", sc.ID(), hex.EncodeToString(sc.Bytes()))
-		}
+			require.NoError(t, sc.Err())
+			if shouldUpdateGoldenFiles() {
+				require.NoError(t, ioutil.WriteFile(tt.goldenFile, buf.Bytes(), 0644))
+			}
+			requireGoldenFileContent(t, tt.goldenFile, buf.String())
+		})
 	}
-	require.NoError(t, sc.Err())
-	if shouldUpdateGoldenFiles() {
-		require.NoError(t, ioutil.WriteFile(goldenFile, buf.Bytes(), 0644))
-	}
-	requireGoldenFileContent(t, goldenFile, buf.String())
 }
 
 func loadHexDump(t *testing.T, filename string) []byte {
