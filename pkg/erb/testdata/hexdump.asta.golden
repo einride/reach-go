@@ -1,5 +1,5 @@
 VER: &{TimeGPS:113968400 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:113968400 Longitude:12.78053987650962 Latitude:57.77768346102213 AltitudeEllipsoid:235.1567126158625m AltitudeMeanSeaLevel:200.11314348887072m HorizontalAccuracy:3.3160000000000003m VerticalAccuracy:4.638m}
+POS: &{TimeGPS:113968400 Longitude:12.78053987650962° Latitude:57.77768346102213° AltitudeEllipsoid:235.1567126158625m AltitudeMeanSeaLevel:200.11314348887072m HorizontalAccuracy:3.3160000000000003m VerticalAccuracy:4.638m}
 STAT: &{TimeGPS:113968400 WeekGPS:2059 FixType:Single HasFix:true NumSVs:20}
 DOPS: &{TimeGPS:113968400 Geometric:1.36 Position:1.21 Vertical:0.98 Horizontal:0.6900000000000001}
 VEL: &{TimeGPS:113968400 North:0m/s East:0m/s Down:-1cm/s Speed:0m/s Heading:-88.77799° SpeedAccuracy:0m/s}
@@ -26,7 +26,7 @@ SVI: &{ID:23 Type:GLONASS SignalStrength:44 CarrierPhase:997857.6 PseudoRangeRes
 SVI: &{ID:24 Type:GLONASS SignalStrength:37 CarrierPhase:990120.4 PseudoRangeResidual:18515.76km DopplerFrequencyHz:2044.7640000000001 Azimuth:145.1° Elevation:55.300000000000004°}
 ID(7): 45520717000d0000ffffff7fc7a6f32cffffff7f00000b0830bd0100b0bf
 VER: &{TimeGPS:113986600 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:113986600 Longitude:12.78052458355728 Latitude:57.777669815870084 AltitudeEllipsoid:234.25054238177836m AltitudeMeanSeaLevel:199.20693215197184m HorizontalAccuracy:3.314m VerticalAccuracy:4.626m}
+POS: &{TimeGPS:113986600 Longitude:12.78052458355728° Latitude:57.777669815870084° AltitudeEllipsoid:234.25054238177836m AltitudeMeanSeaLevel:199.20693215197184m HorizontalAccuracy:3.314m VerticalAccuracy:4.626m}
 STAT: &{TimeGPS:113986600 WeekGPS:2059 FixType:Single HasFix:true NumSVs:20}
 DOPS: &{TimeGPS:113986600 Geometric:1.36 Position:1.2 Vertical:0.98 Horizontal:0.6900000000000001}
 VEL: &{TimeGPS:113986600 North:-1cm/s East:-2cm/s Down:3cm/s Speed:2cm/s Heading:-120.8811° SpeedAccuracy:0m/s}
@@ -53,7 +53,7 @@ SVI: &{ID:23 Type:GLONASS SignalStrength:43 CarrierPhase:998223.28 PseudoRangeRe
 SVI: &{ID:24 Type:GLONASS SignalStrength:37 CarrierPhase:989749.6 PseudoRangeResidual:18508.826km DopplerFrequencyHz:2030.732 Azimuth:145° Elevation:55.400000000000006°}
 ID(7): 45520717000d0000ffffff7f01a4f32cffffff7f00000b0842bd0100fa89
 VER: &{TimeGPS:113986800 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:113986800 Longitude:12.780524337003948 Latitude:57.77766995290005 AltitudeEllipsoid:234.24443614669144m AltitudeMeanSeaLevel:199.20082588039907m HorizontalAccuracy:3.314m VerticalAccuracy:4.626m}
+POS: &{TimeGPS:113986800 Longitude:12.780524337003948° Latitude:57.77766995290005° AltitudeEllipsoid:234.24443614669144m AltitudeMeanSeaLevel:199.20082588039907m HorizontalAccuracy:3.314m VerticalAccuracy:4.626m}
 STAT: &{TimeGPS:113986800 WeekGPS:2059 FixType:Single HasFix:true NumSVs:20}
 DOPS: &{TimeGPS:113986800 Geometric:1.36 Position:1.2 Vertical:0.98 Horizontal:0.6900000000000001}
 VEL: &{TimeGPS:113986800 North:0m/s East:0m/s Down:-1cm/s Speed:0m/s Heading:58.93147000000001° SpeedAccuracy:0m/s}
@@ -80,7 +80,7 @@ SVI: &{ID:23 Type:GLONASS SignalStrength:43 CarrierPhase:998227.36 PseudoRangeRe
 SVI: &{ID:24 Type:GLONASS SignalStrength:37 CarrierPhase:989745.6 PseudoRangeResidual:18508.75km DopplerFrequencyHz:2030.491 Azimuth:145° Elevation:55.400000000000006°}
 ID(7): 45520717000d0000ffffff7ff0a3f32cffffff7f00000b0842bd0100e86a
 VER: &{TimeGPS:113987000 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:113987000 Longitude:12.78052399007773 Latitude:57.77767029760467 AltitudeEllipsoid:234.20654163416475m AltitudeMeanSeaLevel:199.1629315829321m HorizontalAccuracy:3.314m VerticalAccuracy:4.626m}
+POS: &{TimeGPS:113987000 Longitude:12.78052399007773° Latitude:57.77767029760467° AltitudeEllipsoid:234.20654163416475m AltitudeMeanSeaLevel:199.1629315829321m HorizontalAccuracy:3.314m VerticalAccuracy:4.626m}
 STAT: &{TimeGPS:113987000 WeekGPS:2059 FixType:Single HasFix:true NumSVs:20}
 DOPS: &{TimeGPS:113987000 Geometric:1.36 Position:1.2 Vertical:0.98 Horizontal:0.6900000000000001}
 VEL: &{TimeGPS:113987000 North:0m/s East:0m/s Down:0m/s Speed:0m/s Heading:-136.47261000000003° SpeedAccuracy:0m/s}
@@ -107,7 +107,7 @@ SVI: &{ID:23 Type:GLONASS SignalStrength:43 CarrierPhase:998231.36 PseudoRangeRe
 SVI: &{ID:24 Type:GLONASS SignalStrength:37 CarrierPhase:989741.52 PseudoRangeResidual:18508.674km DopplerFrequencyHz:2030.076 Azimuth:145° Elevation:55.400000000000006°}
 ID(7): 45520717000d0000ffffff7fd0a3f32cffffff7f00000b0843bd0100c96e
 VER: &{TimeGPS:113987200 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:113987200 Longitude:12.780523910490725 Latitude:57.77767058703488 AltitudeEllipsoid:234.21710628084838m AltitudeMeanSeaLevel:199.17349664789054m HorizontalAccuracy:3.314m VerticalAccuracy:4.626m}
+POS: &{TimeGPS:113987200 Longitude:12.780523910490725° Latitude:57.777670587034876° AltitudeEllipsoid:234.21710628084838m AltitudeMeanSeaLevel:199.17349664789054m HorizontalAccuracy:3.314m VerticalAccuracy:4.626m}
 STAT: &{TimeGPS:113987200 WeekGPS:2059 FixType:Single HasFix:true NumSVs:20}
 DOPS: &{TimeGPS:113987200 Geometric:1.36 Position:1.2 Vertical:0.98 Horizontal:0.6900000000000001}
 VEL: &{TimeGPS:113987200 North:0m/s East:0m/s Down:0m/s Speed:0m/s Heading:-11.891190000000002° SpeedAccuracy:0m/s}
@@ -134,7 +134,7 @@ SVI: &{ID:23 Type:GLONASS SignalStrength:43 CarrierPhase:998235.4400000001 Pseud
 SVI: &{ID:24 Type:GLONASS SignalStrength:37 CarrierPhase:989737.4400000001 PseudoRangeResidual:18508.598km DopplerFrequencyHz:2030.269 Azimuth:145° Elevation:55.400000000000006°}
 ID(7): 45520717000d0000ffffff7fc6a3f32cffffff7f00000b0843bd0100bfce
 VER: &{TimeGPS:113987400 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:113987400 Longitude:12.780523825545096 Latitude:57.77767058310878 AltitudeEllipsoid:234.21279155276716m AltitudeMeanSeaLevel:199.16918181754863m HorizontalAccuracy:3.314m VerticalAccuracy:4.626m}
+POS: &{TimeGPS:113987400 Longitude:12.780523825545096° Latitude:57.77767058310878° AltitudeEllipsoid:234.21279155276716m AltitudeMeanSeaLevel:199.16918181754863m HorizontalAccuracy:3.314m VerticalAccuracy:4.626m}
 STAT: &{TimeGPS:113987400 WeekGPS:2059 FixType:Single HasFix:true NumSVs:20}
 DOPS: &{TimeGPS:113987400 Geometric:1.36 Position:1.2 Vertical:0.98 Horizontal:0.6900000000000001}
 VEL: &{TimeGPS:113987400 North:0m/s East:0m/s Down:0m/s Speed:0m/s Heading:53.553900000000006° SpeedAccuracy:0m/s}
@@ -161,7 +161,7 @@ SVI: &{ID:23 Type:GLONASS SignalStrength:43 CarrierPhase:998239.4400000001 Pseud
 SVI: &{ID:24 Type:GLONASS SignalStrength:37 CarrierPhase:989733.36 PseudoRangeResidual:18508.522km DopplerFrequencyHz:2029.718 Azimuth:145° Elevation:55.400000000000006°}
 ID(7): 45520717000d0000ffffff7fc1a3f32cffffff7f00000b0843bd0100ba7e
 VER: &{TimeGPS:113987600 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:113987600 Longitude:12.780523557378338 Latitude:57.77767048481376 AltitudeEllipsoid:234.17396370787174m AltitudeMeanSeaLevel:199.13035349916282m HorizontalAccuracy:3.314m VerticalAccuracy:4.626m}
+POS: &{TimeGPS:113987600 Longitude:12.780523557378338° Latitude:57.77767048481376° AltitudeEllipsoid:234.17396370787174m AltitudeMeanSeaLevel:199.13035349916282m HorizontalAccuracy:3.314m VerticalAccuracy:4.626m}
 STAT: &{TimeGPS:113987600 WeekGPS:2059 FixType:Single HasFix:true NumSVs:20}
 DOPS: &{TimeGPS:113987600 Geometric:1.36 Position:1.2 Vertical:0.98 Horizontal:0.6900000000000001}
 VEL: &{TimeGPS:113987600 North:0m/s East:0m/s Down:0m/s Speed:0m/s Heading:-135.37933° SpeedAccuracy:0m/s}
@@ -188,7 +188,7 @@ SVI: &{ID:23 Type:GLONASS SignalStrength:43 CarrierPhase:998243.4400000001 Pseud
 SVI: &{ID:24 Type:GLONASS SignalStrength:37 CarrierPhase:989729.36 PseudoRangeResidual:18508.446km DopplerFrequencyHz:2029.464 Azimuth:145° Elevation:55.400000000000006°}
 ID(7): 45520717000d0000ffffff7fafa3f32cffffff7f00000b0843bd0100a85e
 VER: &{TimeGPS:113987800 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:113987800 Longitude:12.780523441035793 Latitude:57.777670526253694 AltitudeEllipsoid:234.17411932814866m AltitudeMeanSeaLevel:199.1305090614952m HorizontalAccuracy:3.314m VerticalAccuracy:4.626m}
+POS: &{TimeGPS:113987800 Longitude:12.780523441035793° Latitude:57.777670526253694° AltitudeEllipsoid:234.17411932814866m AltitudeMeanSeaLevel:199.1305090614952m HorizontalAccuracy:3.314m VerticalAccuracy:4.626m}
 STAT: &{TimeGPS:113987800 WeekGPS:2059 FixType:Single HasFix:true NumSVs:20}
 DOPS: &{TimeGPS:113987800 Geometric:1.36 Position:1.2 Vertical:0.98 Horizontal:0.6900000000000001}
 VEL: &{TimeGPS:113987800 North:0m/s East:0m/s Down:-1cm/s Speed:0m/s Heading:19.77909° SpeedAccuracy:0m/s}
@@ -215,7 +215,7 @@ SVI: &{ID:23 Type:GLONASS SignalStrength:43 CarrierPhase:998247.52 PseudoRangeRe
 SVI: &{ID:24 Type:GLONASS SignalStrength:37 CarrierPhase:989725.28 PseudoRangeResidual:18508.37km DopplerFrequencyHz:2028.934 Azimuth:145° Elevation:55.400000000000006°}
 ID(7): 45520717000d0000ffffff7fa7a3f32cffffff7f00000b0843bd0100a0de
 VER: &{TimeGPS:113988000 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:113988000 Longitude:12.780523269436786 Latitude:57.777670490457055 AltitudeEllipsoid:234.17783918697387m AltitudeMeanSeaLevel:199.13422866486985m HorizontalAccuracy:3.314m VerticalAccuracy:4.625m}
+POS: &{TimeGPS:113988000 Longitude:12.780523269436786° Latitude:57.777670490457055° AltitudeEllipsoid:234.17783918697387m AltitudeMeanSeaLevel:199.13422866486985m HorizontalAccuracy:3.314m VerticalAccuracy:4.625m}
 STAT: &{TimeGPS:113988000 WeekGPS:2059 FixType:Single HasFix:true NumSVs:20}
 DOPS: &{TimeGPS:113988000 Geometric:1.36 Position:1.2 Vertical:0.98 Horizontal:0.6900000000000001}
 VEL: &{TimeGPS:113988000 North:-1cm/s East:0m/s Down:-1cm/s Speed:1cm/s Heading:-170.22427000000002° SpeedAccuracy:0m/s}
@@ -242,7 +242,7 @@ SVI: &{ID:23 Type:GLONASS SignalStrength:43 CarrierPhase:998251.52 PseudoRangeRe
 SVI: &{ID:24 Type:GLONASS SignalStrength:37 CarrierPhase:989721.2000000001 PseudoRangeResidual:18508.294km DopplerFrequencyHz:2029.701 Azimuth:145° Elevation:55.400000000000006°}
 ID(7): 45520717000d0000ffffff7f9fa3f32cffffff7f00000b0844bd01009962
 VER: &{TimeGPS:113988200 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:113988200 Longitude:12.780523305630178 Latitude:57.777670562997926 AltitudeEllipsoid:234.17576996888965m AltitudeMeanSeaLevel:199.1321596146523m HorizontalAccuracy:3.314m VerticalAccuracy:4.625m}
+POS: &{TimeGPS:113988200 Longitude:12.780523305630178° Latitude:57.777670562997926° AltitudeEllipsoid:234.17576996888965m AltitudeMeanSeaLevel:199.1321596146523m HorizontalAccuracy:3.314m VerticalAccuracy:4.625m}
 STAT: &{TimeGPS:113988200 WeekGPS:2059 FixType:Single HasFix:true NumSVs:20}
 DOPS: &{TimeGPS:113988200 Geometric:1.36 Position:1.2 Vertical:0.98 Horizontal:0.6900000000000001}
 VEL: &{TimeGPS:113988200 North:0m/s East:0m/s Down:0m/s Speed:0m/s Heading:17.4131° SpeedAccuracy:0m/s}
@@ -269,7 +269,7 @@ SVI: &{ID:23 Type:GLONASS SignalStrength:43 CarrierPhase:998255.6 PseudoRangeRes
 SVI: &{ID:24 Type:GLONASS SignalStrength:37 CarrierPhase:989717.12 PseudoRangeResidual:18508.218km DopplerFrequencyHz:2029.1090000000002 Azimuth:145° Elevation:55.400000000000006°}
 ID(7): 45520717000d0000ffffff7f9fa3f32cffffff7f00000b0844bd01009962
 VER: &{TimeGPS:113988400 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:113988400 Longitude:12.780523382521066 Latitude:57.77767066840473 AltitudeEllipsoid:234.160084400326m AltitudeMeanSeaLevel:199.11647431729315m HorizontalAccuracy:3.314m VerticalAccuracy:4.625m}
+POS: &{TimeGPS:113988400 Longitude:12.780523382521066° Latitude:57.777670668404724° AltitudeEllipsoid:234.160084400326m AltitudeMeanSeaLevel:199.11647431729315m HorizontalAccuracy:3.314m VerticalAccuracy:4.625m}
 STAT: &{TimeGPS:113988400 WeekGPS:2059 FixType:Single HasFix:true NumSVs:20}
 DOPS: &{TimeGPS:113988400 Geometric:1.36 Position:1.2 Vertical:0.98 Horizontal:0.6900000000000001}
 VEL: &{TimeGPS:113988400 North:0m/s East:0m/s Down:0m/s Speed:0m/s Heading:-155.27769° SpeedAccuracy:0m/s}
@@ -296,7 +296,7 @@ SVI: &{ID:23 Type:GLONASS SignalStrength:43 CarrierPhase:998259.6 PseudoRangeRes
 SVI: &{ID:24 Type:GLONASS SignalStrength:37 CarrierPhase:989713.12 PseudoRangeResidual:18508.144km DopplerFrequencyHz:2029.392 Azimuth:145° Elevation:55.400000000000006°}
 ID(7): 45520717000d0000ffffff7f9fa3f32cffffff7f00000b0844bd01009962
 VER: &{TimeGPS:113988600 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:113988600 Longitude:12.780523505058504 Latitude:57.77767081515627 AltitudeEllipsoid:234.15507140103728m AltitudeMeanSeaLevel:199.11146171297432m HorizontalAccuracy:3.314m VerticalAccuracy:4.625m}
+POS: &{TimeGPS:113988600 Longitude:12.780523505058504° Latitude:57.77767081515627° AltitudeEllipsoid:234.15507140103728m AltitudeMeanSeaLevel:199.11146171297432m HorizontalAccuracy:3.314m VerticalAccuracy:4.625m}
 STAT: &{TimeGPS:113988600 WeekGPS:2059 FixType:Single HasFix:true NumSVs:19}
 DOPS: &{TimeGPS:113988600 Geometric:1.45 Position:1.28 Vertical:1.03 Horizontal:0.75}
 VEL: &{TimeGPS:113988600 North:1cm/s East:0m/s Down:0m/s Speed:1cm/s Heading:-35.65695° SpeedAccuracy:0m/s}
@@ -322,7 +322,7 @@ SVI: &{ID:23 Type:GLONASS SignalStrength:43 CarrierPhase:998263.68 PseudoRangeRe
 SVI: &{ID:24 Type:GLONASS SignalStrength:37 CarrierPhase:989709.04 PseudoRangeResidual:18508.068km DopplerFrequencyHz:2028.856 Azimuth:145° Elevation:55.400000000000006°}
 ID(7): 45520717000d0000ffffff7fa3a3f32cffffff7f00000b0844bd01009da2
 VER: &{TimeGPS:113988800 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:113988800 Longitude:12.780523777544081 Latitude:57.77767097107689 AltitudeEllipsoid:234.1545429052785m AltitudeMeanSeaLevel:199.11093379662478m HorizontalAccuracy:3.314m VerticalAccuracy:4.625m}
+POS: &{TimeGPS:113988800 Longitude:12.780523777544081° Latitude:57.77767097107688° AltitudeEllipsoid:234.1545429052785m AltitudeMeanSeaLevel:199.11093379662478m HorizontalAccuracy:3.314m VerticalAccuracy:4.625m}
 STAT: &{TimeGPS:113988800 WeekGPS:2059 FixType:Single HasFix:true NumSVs:19}
 DOPS: &{TimeGPS:113988800 Geometric:1.45 Position:1.28 Vertical:1.03 Horizontal:0.75}
 VEL: &{TimeGPS:113988800 North:0m/s East:0m/s Down:0m/s Speed:1cm/s Heading:58.54887000000001° SpeedAccuracy:0m/s}
@@ -348,7 +348,7 @@ SVI: &{ID:23 Type:GLONASS SignalStrength:43 CarrierPhase:998267.68 PseudoRangeRe
 SVI: &{ID:24 Type:GLONASS SignalStrength:37 CarrierPhase:989704.96 PseudoRangeResidual:18507.992km DopplerFrequencyHz:2028.7540000000001 Azimuth:144.9° Elevation:55.400000000000006°}
 ID(7): 45520717000d0000ffffff7fafa3f32cffffff7f00000b0844bd0100a962
 VER: &{TimeGPS:113989000 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:113989000 Longitude:12.78052402722541 Latitude:57.77767104791765 AltitudeEllipsoid:234.16309539414942m AltitudeMeanSeaLevel:199.11948670060247m HorizontalAccuracy:3.314m VerticalAccuracy:4.625m}
+POS: &{TimeGPS:113989000 Longitude:12.78052402722541° Latitude:57.77767104791764° AltitudeEllipsoid:234.16309539414942m AltitudeMeanSeaLevel:199.11948670060247m HorizontalAccuracy:3.314m VerticalAccuracy:4.625m}
 STAT: &{TimeGPS:113989000 WeekGPS:2059 FixType:Single HasFix:true NumSVs:19}
 DOPS: &{TimeGPS:113989000 Geometric:1.45 Position:1.28 Vertical:1.03 Horizontal:0.75}
 VEL: &{TimeGPS:113989000 North:0m/s East:0m/s Down:-1cm/s Speed:0m/s Heading:162.19557000000003° SpeedAccuracy:0m/s}
@@ -374,7 +374,7 @@ SVI: &{ID:23 Type:GLONASS SignalStrength:43 CarrierPhase:998271.76 PseudoRangeRe
 SVI: &{ID:24 Type:GLONASS SignalStrength:37 CarrierPhase:989700.88 PseudoRangeResidual:18507.916km DopplerFrequencyHz:2028.487 Azimuth:144.9° Elevation:55.400000000000006°}
 ID(7): 45520717000d0000ffffff7fbda3f32cffffff7f00000b0845bd0100b846
 VER: &{TimeGPS:113989200 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:113989200 Longitude:12.780524246959853 Latitude:57.777671110730495 AltitudeEllipsoid:234.1695872284472m AltitudeMeanSeaLevel:199.12597889177988m HorizontalAccuracy:3.314m VerticalAccuracy:4.625m}
+POS: &{TimeGPS:113989200 Longitude:12.780524246959853° Latitude:57.777671110730495° AltitudeEllipsoid:234.1695872284472m AltitudeMeanSeaLevel:199.12597889177988m HorizontalAccuracy:3.314m VerticalAccuracy:4.625m}
 STAT: &{TimeGPS:113989200 WeekGPS:2059 FixType:Single HasFix:true NumSVs:19}
 DOPS: &{TimeGPS:113989200 Geometric:1.45 Position:1.28 Vertical:1.03 Horizontal:0.75}
 VEL: &{TimeGPS:113989200 North:0m/s East:0m/s Down:0m/s Speed:0m/s Heading:33.53936° SpeedAccuracy:0m/s}
@@ -400,7 +400,7 @@ SVI: &{ID:23 Type:GLONASS SignalStrength:43 CarrierPhase:998275.76 PseudoRangeRe
 SVI: &{ID:24 Type:GLONASS SignalStrength:37 CarrierPhase:989696.88 PseudoRangeResidual:18507.84km DopplerFrequencyHz:2028.566 Azimuth:144.9° Elevation:55.5°}
 ID(7): 45520717000d0000ffffff7fc9a3f32cffffff7f00000b0845bd0100c406
 VER: &{TimeGPS:113989400 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:113989400 Longitude:12.78052446666663 Latitude:57.77767115401464 AltitudeEllipsoid:234.1702513154596m AltitudeMeanSeaLevel:199.12664330138932m HorizontalAccuracy:3.314m VerticalAccuracy:4.625m}
+POS: &{TimeGPS:113989400 Longitude:12.78052446666663° Latitude:57.77767115401464° AltitudeEllipsoid:234.1702513154596m AltitudeMeanSeaLevel:199.12664330138932m HorizontalAccuracy:3.314m VerticalAccuracy:4.625m}
 STAT: &{TimeGPS:113989400 WeekGPS:2059 FixType:Single HasFix:true NumSVs:19}
 DOPS: &{TimeGPS:113989400 Geometric:1.45 Position:1.28 Vertical:1.03 Horizontal:0.75}
 VEL: &{TimeGPS:113989400 North:0m/s East:0m/s Down:0m/s Speed:0m/s Heading:2.8774900000000003° SpeedAccuracy:0m/s}
@@ -426,7 +426,7 @@ SVI: &{ID:23 Type:GLONASS SignalStrength:43 CarrierPhase:998279.76 PseudoRangeRe
 SVI: &{ID:24 Type:GLONASS SignalStrength:37 CarrierPhase:989692.8 PseudoRangeResidual:18507.764km DopplerFrequencyHz:2028.344 Azimuth:144.9° Elevation:55.5°}
 ID(7): 45520717000d0000ffffff7fd5a3f32cffffff7f00000b0845bd0100d0c6
 VER: &{TimeGPS:114007600 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:114007600 Longitude:12.780534599596537 Latitude:57.7776732899875 AltitudeEllipsoid:232.94843559060246m AltitudeMeanSeaLevel:197.90484269980408m HorizontalAccuracy:3.557m VerticalAccuracy:4.706m}
+POS: &{TimeGPS:114007600 Longitude:12.780534599596537° Latitude:57.7776732899875° AltitudeEllipsoid:232.94843559060246m AltitudeMeanSeaLevel:197.90484269980408m HorizontalAccuracy:3.557m VerticalAccuracy:4.706m}
 STAT: &{TimeGPS:114007600 WeekGPS:2059 FixType:Single HasFix:true NumSVs:19}
 DOPS: &{TimeGPS:114007600 Geometric:1.45 Position:1.27 Vertical:1.03 Horizontal:0.74}
 VEL: &{TimeGPS:114007600 North:0m/s East:0m/s Down:-1cm/s Speed:0m/s Heading:-75.80145° SpeedAccuracy:0m/s}
@@ -452,7 +452,7 @@ SVI: &{ID:23 Type:GLONASS SignalStrength:43 CarrierPhase:998648.56 PseudoRangeRe
 SVI: &{ID:24 Type:GLONASS SignalStrength:37 CarrierPhase:989324.96 PseudoRangeResidual:18500.884km DopplerFrequencyHz:2013.996 Azimuth:144.8° Elevation:55.6°}
 ID(7): 45520717000c0000ffffff7f65a5f32cffffff7f00000b0857bd01007315
 VER: &{TimeGPS:114007800 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:114007800 Longitude:12.7805341297803 Latitude:57.777673153305514 AltitudeEllipsoid:232.87443013302982m AltitudeMeanSeaLevel:197.83083647500723m HorizontalAccuracy:3.557m VerticalAccuracy:4.706m}
+POS: &{TimeGPS:114007800 Longitude:12.7805341297803° Latitude:57.777673153305514° AltitudeEllipsoid:232.87443013302982m AltitudeMeanSeaLevel:197.83083647500723m HorizontalAccuracy:3.557m VerticalAccuracy:4.706m}
 STAT: &{TimeGPS:114007800 WeekGPS:2059 FixType:Single HasFix:true NumSVs:19}
 DOPS: &{TimeGPS:114007800 Geometric:1.45 Position:1.27 Vertical:1.03 Horizontal:0.74}
 VEL: &{TimeGPS:114007800 North:0m/s East:0m/s Down:-1cm/s Speed:0m/s Heading:-172.7728° SpeedAccuracy:0m/s}
@@ -478,7 +478,7 @@ SVI: &{ID:23 Type:GLONASS SignalStrength:43 CarrierPhase:998652.64 PseudoRangeRe
 SVI: &{ID:24 Type:GLONASS SignalStrength:37 CarrierPhase:989320.96 PseudoRangeResidual:18500.808km DopplerFrequencyHz:2013.741 Azimuth:144.8° Elevation:55.6°}
 ID(7): 45520717000c0000ffffff7f43a5f32cffffff7f00000b0857bd010051f5
 VER: &{TimeGPS:114008000 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:114008000 Longitude:12.780532978134886 Latitude:57.777673885129175 AltitudeEllipsoid:232.74598339851946m AltitudeMeanSeaLevel:197.70238973100976m HorizontalAccuracy:3.3120000000000003m VerticalAccuracy:4.612m}
+POS: &{TimeGPS:114008000 Longitude:12.780532978134886° Latitude:57.777673885129175° AltitudeEllipsoid:232.74598339851946m AltitudeMeanSeaLevel:197.70238973100976m HorizontalAccuracy:3.3120000000000003m VerticalAccuracy:4.612m}
 STAT: &{TimeGPS:114008000 WeekGPS:2059 FixType:Single HasFix:true NumSVs:19}
 DOPS: &{TimeGPS:114008000 Geometric:1.45 Position:1.27 Vertical:1.03 Horizontal:0.74}
 VEL: &{TimeGPS:114008000 North:0m/s East:0m/s Down:-2cm/s Speed:0m/s Heading:118.56975° SpeedAccuracy:0m/s}
@@ -504,7 +504,7 @@ SVI: &{ID:23 Type:GLONASS SignalStrength:43 CarrierPhase:998656.72 PseudoRangeRe
 SVI: &{ID:24 Type:GLONASS SignalStrength:37 CarrierPhase:989316.88 PseudoRangeResidual:18500.734km DopplerFrequencyHz:2013.977 Azimuth:144.8° Elevation:55.6°}
 ID(7): 45520717000d0000ffffff7fe2a4f32cffffff7f00000b0858bd0100f1f1
 VER: &{TimeGPS:114008200 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:114008200 Longitude:12.780532356164466 Latitude:57.77767452649426 AltitudeEllipsoid:232.69101508893073m AltitudeMeanSeaLevel:197.64742184798288m HorizontalAccuracy:3.3120000000000003m VerticalAccuracy:4.612m}
+POS: &{TimeGPS:114008200 Longitude:12.780532356164466° Latitude:57.77767452649426° AltitudeEllipsoid:232.69101508893073m AltitudeMeanSeaLevel:197.64742184798288m HorizontalAccuracy:3.3120000000000003m VerticalAccuracy:4.612m}
 STAT: &{TimeGPS:114008200 WeekGPS:2059 FixType:Single HasFix:true NumSVs:19}
 DOPS: &{TimeGPS:114008200 Geometric:1.45 Position:1.27 Vertical:1.03 Horizontal:0.74}
 VEL: &{TimeGPS:114008200 North:0m/s East:0m/s Down:1cm/s Speed:0m/s Heading:-59.99273° SpeedAccuracy:0m/s}
@@ -530,7 +530,7 @@ SVI: &{ID:23 Type:GLONASS SignalStrength:43 CarrierPhase:998660.72 PseudoRangeRe
 SVI: &{ID:24 Type:GLONASS SignalStrength:37 CarrierPhase:989312.88 PseudoRangeResidual:18500.658km DopplerFrequencyHz:2013.777 Azimuth:144.8° Elevation:55.6°}
 ID(7): 45520717000d0000ffffff7faaa4f32cffffff7f00000b0858bd0100b971
 VER: &{TimeGPS:114008400 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:114008400 Longitude:12.780532052878764 Latitude:57.77767496119418 AltitudeEllipsoid:232.65642665605992m AltitudeMeanSeaLevel:197.61283383701345m HorizontalAccuracy:3.3120000000000003m VerticalAccuracy:4.612m}
+POS: &{TimeGPS:114008400 Longitude:12.780532052878764° Latitude:57.77767496119418° AltitudeEllipsoid:232.65642665605992m AltitudeMeanSeaLevel:197.61283383701345m HorizontalAccuracy:3.3120000000000003m VerticalAccuracy:4.612m}
 STAT: &{TimeGPS:114008400 WeekGPS:2059 FixType:Single HasFix:true NumSVs:19}
 DOPS: &{TimeGPS:114008400 Geometric:1.45 Position:1.27 Vertical:1.03 Horizontal:0.74}
 VEL: &{TimeGPS:114008400 North:0m/s East:-1cm/s Down:0m/s Speed:1cm/s Heading:-87.96454° SpeedAccuracy:0m/s}
@@ -556,7 +556,7 @@ SVI: &{ID:23 Type:GLONASS SignalStrength:43 CarrierPhase:998664.8 PseudoRangeRes
 SVI: &{ID:24 Type:GLONASS SignalStrength:37 CarrierPhase:989308.88 PseudoRangeResidual:18500.582km DopplerFrequencyHz:2013.9080000000001 Azimuth:144.8° Elevation:55.6°}
 ID(7): 45520717000d0000ffffff7f8ca4f32cffffff7f00000b0858bd01009b91
 VER: &{TimeGPS:114008600 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:114008600 Longitude:12.780532182564588 Latitude:57.77767517613441 AltitudeEllipsoid:232.68614148534834m AltitudeMeanSeaLevel:197.64254918889435m HorizontalAccuracy:3.556m VerticalAccuracy:4.706m}
+POS: &{TimeGPS:114008600 Longitude:12.780532182564588° Latitude:57.77767517613441° AltitudeEllipsoid:232.68614148534834m AltitudeMeanSeaLevel:197.64254918889435m HorizontalAccuracy:3.556m VerticalAccuracy:4.706m}
 STAT: &{TimeGPS:114008600 WeekGPS:2059 FixType:Single HasFix:true NumSVs:19}
 DOPS: &{TimeGPS:114008600 Geometric:1.45 Position:1.27 Vertical:1.03 Horizontal:0.74}
 VEL: &{TimeGPS:114008600 North:0m/s East:0m/s Down:-1cm/s Speed:0m/s Heading:-162.88278000000003° SpeedAccuracy:0m/s}
@@ -582,7 +582,7 @@ SVI: &{ID:23 Type:GLONASS SignalStrength:43 CarrierPhase:998668.88 PseudoRangeRe
 SVI: &{ID:24 Type:GLONASS SignalStrength:37 CarrierPhase:989304.8 PseudoRangeResidual:18500.508km DopplerFrequencyHz:2013.596 Azimuth:144.8° Elevation:55.6°}
 ID(7): 45520717000c0000ffffff7f92a4f32cffffff7f00000b0858bd0100a0da
 VER: &{TimeGPS:114008800 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:114008800 Longitude:12.780532476657507 Latitude:57.777675403550866 AltitudeEllipsoid:232.70097638014704m AltitudeMeanSeaLevel:197.65738481275946m HorizontalAccuracy:3.556m VerticalAccuracy:4.706m}
+POS: &{TimeGPS:114008800 Longitude:12.780532476657507° Latitude:57.77767540355086° AltitudeEllipsoid:232.70097638014704m AltitudeMeanSeaLevel:197.65738481275946m HorizontalAccuracy:3.556m VerticalAccuracy:4.706m}
 STAT: &{TimeGPS:114008800 WeekGPS:2059 FixType:Single HasFix:true NumSVs:19}
 DOPS: &{TimeGPS:114008800 Geometric:1.45 Position:1.27 Vertical:1.03 Horizontal:0.74}
 VEL: &{TimeGPS:114008800 North:0m/s East:0m/s Down:-2cm/s Speed:0m/s Heading:114.98822999999999° SpeedAccuracy:0m/s}
@@ -608,7 +608,7 @@ SVI: &{ID:23 Type:GLONASS SignalStrength:43 CarrierPhase:998672.96 PseudoRangeRe
 SVI: &{ID:24 Type:GLONASS SignalStrength:37 CarrierPhase:989300.8 PseudoRangeResidual:18500.432km DopplerFrequencyHz:2012.878 Azimuth:144.8° Elevation:55.6°}
 ID(7): 45520717000c0000ffffff7fa0a4f32cffffff7f00000b0858bd0100aeba
 VER: &{TimeGPS:114009000 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:114009000 Longitude:12.780532530800576 Latitude:57.77767557436338 AltitudeEllipsoid:232.68376018851995m AltitudeMeanSeaLevel:197.64016898151166m HorizontalAccuracy:3.556m VerticalAccuracy:4.705m}
+POS: &{TimeGPS:114009000 Longitude:12.780532530800576° Latitude:57.77767557436338° AltitudeEllipsoid:232.68376018851995m AltitudeMeanSeaLevel:197.64016898151166m HorizontalAccuracy:3.556m VerticalAccuracy:4.705m}
 STAT: &{TimeGPS:114009000 WeekGPS:2059 FixType:Single HasFix:true NumSVs:19}
 DOPS: &{TimeGPS:114009000 Geometric:1.45 Position:1.27 Vertical:1.03 Horizontal:0.74}
 VEL: &{TimeGPS:114009000 North:0m/s East:0m/s Down:-1cm/s Speed:0m/s Heading:8.79574° SpeedAccuracy:0m/s}
@@ -634,7 +634,7 @@ SVI: &{ID:23 Type:GLONASS SignalStrength:43 CarrierPhase:998677.04 PseudoRangeRe
 SVI: &{ID:24 Type:GLONASS SignalStrength:37 CarrierPhase:989296.8 PseudoRangeResidual:18500.356km DopplerFrequencyHz:2012.909 Azimuth:144.8° Elevation:55.6°}
 ID(7): 45520717000c0000ffffff7f9ea4f32cffffff7f00000b0859bd0100ad9e
 VER: &{TimeGPS:114009200 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:114009200 Longitude:12.780532571253433 Latitude:57.777675795706614 AltitudeEllipsoid:232.6516361972317m AltitudeMeanSeaLevel:197.60804542385782m HorizontalAccuracy:3.3120000000000003m VerticalAccuracy:4.612m}
+POS: &{TimeGPS:114009200 Longitude:12.780532571253433° Latitude:57.777675795706614° AltitudeEllipsoid:232.6516361972317m AltitudeMeanSeaLevel:197.60804542385782m HorizontalAccuracy:3.3120000000000003m VerticalAccuracy:4.612m}
 STAT: &{TimeGPS:114009200 WeekGPS:2059 FixType:Single HasFix:true NumSVs:19}
 DOPS: &{TimeGPS:114009200 Geometric:1.45 Position:1.27 Vertical:1.03 Horizontal:0.74}
 VEL: &{TimeGPS:114009200 North:0m/s East:0m/s Down:0m/s Speed:0m/s Heading:-164.64984° SpeedAccuracy:0m/s}
@@ -660,7 +660,7 @@ SVI: &{ID:23 Type:GLONASS SignalStrength:43 CarrierPhase:998681.12 PseudoRangeRe
 SVI: &{ID:24 Type:GLONASS SignalStrength:37 CarrierPhase:989292.72 PseudoRangeResidual:18500.282km DopplerFrequencyHz:2013.055 Azimuth:144.8° Elevation:55.6°}
 ID(7): 45520717000d0000ffffff7f98a4f32cffffff7f00000b0859bd0100a855
 VER: &{TimeGPS:114009400 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:114009400 Longitude:12.780532718662528 Latitude:57.77767600971516 AltitudeEllipsoid:232.64063496235758m AltitudeMeanSeaLevel:197.5970447298413m HorizontalAccuracy:3.3120000000000003m VerticalAccuracy:4.611m}
+POS: &{TimeGPS:114009400 Longitude:12.780532718662528° Latitude:57.77767600971516° AltitudeEllipsoid:232.64063496235758m AltitudeMeanSeaLevel:197.5970447298413m HorizontalAccuracy:3.3120000000000003m VerticalAccuracy:4.611m}
 STAT: &{TimeGPS:114009400 WeekGPS:2059 FixType:Single HasFix:true NumSVs:19}
 DOPS: &{TimeGPS:114009400 Geometric:1.45 Position:1.27 Vertical:1.03 Horizontal:0.74}
 VEL: &{TimeGPS:114009400 North:0m/s East:0m/s Down:-1cm/s Speed:0m/s Heading:-148.34705000000002° SpeedAccuracy:0m/s}
@@ -686,7 +686,7 @@ SVI: &{ID:23 Type:GLONASS SignalStrength:43 CarrierPhase:998685.12 PseudoRangeRe
 SVI: &{ID:24 Type:GLONASS SignalStrength:37 CarrierPhase:989288.72 PseudoRangeResidual:18500.206km DopplerFrequencyHz:2012.921 Azimuth:144.8° Elevation:55.6°}
 ID(7): 45520717000d0000ffffff7f9aa4f32cffffff7f00000b0859bd0100aa75
 VER: &{TimeGPS:114009600 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:114009600 Longitude:12.780532919722978 Latitude:57.7776761999422 AltitudeEllipsoid:232.63954213541m AltitudeMeanSeaLevel:197.59595246227912m HorizontalAccuracy:3.3120000000000003m VerticalAccuracy:4.611m}
+POS: &{TimeGPS:114009600 Longitude:12.780532919722978° Latitude:57.7776761999422° AltitudeEllipsoid:232.63954213541m AltitudeMeanSeaLevel:197.59595246227912m HorizontalAccuracy:3.3120000000000003m VerticalAccuracy:4.611m}
 STAT: &{TimeGPS:114009600 WeekGPS:2059 FixType:Single HasFix:true NumSVs:19}
 DOPS: &{TimeGPS:114009600 Geometric:1.45 Position:1.27 Vertical:1.03 Horizontal:0.74}
 VEL: &{TimeGPS:114009600 North:0m/s East:0m/s Down:0m/s Speed:0m/s Heading:-45.4054° SpeedAccuracy:0m/s}
@@ -712,7 +712,7 @@ SVI: &{ID:23 Type:GLONASS SignalStrength:43 CarrierPhase:998689.2000000001 Pseud
 SVI: &{ID:24 Type:GLONASS SignalStrength:37 CarrierPhase:989284.72 PseudoRangeResidual:18500.13km DopplerFrequencyHz:2012.805 Azimuth:144.8° Elevation:55.6°}
 ID(7): 45520717000d0000ffffff7fa2a4f32cffffff7f00000b0859bd0100b2f5
 VER: &{TimeGPS:114009800 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:114009800 Longitude:12.780533228205442 Latitude:57.77767623415601 AltitudeEllipsoid:232.6528678946197m AltitudeMeanSeaLevel:197.6092786278524m HorizontalAccuracy:3.556m VerticalAccuracy:4.705m}
+POS: &{TimeGPS:114009800 Longitude:12.780533228205442° Latitude:57.77767623415601° AltitudeEllipsoid:232.6528678946197m AltitudeMeanSeaLevel:197.6092786278524m HorizontalAccuracy:3.556m VerticalAccuracy:4.705m}
 STAT: &{TimeGPS:114009800 WeekGPS:2059 FixType:Single HasFix:true NumSVs:19}
 DOPS: &{TimeGPS:114009800 Geometric:1.45 Position:1.27 Vertical:1.03 Horizontal:0.74}
 VEL: &{TimeGPS:114009800 North:0m/s East:0m/s Down:-1cm/s Speed:0m/s Heading:-148.63606000000001° SpeedAccuracy:0m/s}
@@ -738,7 +738,7 @@ SVI: &{ID:23 Type:GLONASS SignalStrength:43 CarrierPhase:998693.28 PseudoRangeRe
 SVI: &{ID:24 Type:GLONASS SignalStrength:37 CarrierPhase:989280.64 PseudoRangeResidual:18500.056km DopplerFrequencyHz:2012.791 Azimuth:144.8° Elevation:55.6°}
 ID(7): 45520717000c0000ffffff7fb5a4f32cffffff7f00000b0859bd0100c40e
 VER: &{TimeGPS:114010000 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:114010000 Longitude:12.780533596746746 Latitude:57.77767631550107 AltitudeEllipsoid:232.68439202569425m AltitudeMeanSeaLevel:197.6408033153867m HorizontalAccuracy:3.556m VerticalAccuracy:4.705m}
+POS: &{TimeGPS:114010000 Longitude:12.780533596746746° Latitude:57.77767631550106° AltitudeEllipsoid:232.68439202569425m AltitudeMeanSeaLevel:197.6408033153867m HorizontalAccuracy:3.556m VerticalAccuracy:4.705m}
 STAT: &{TimeGPS:114010000 WeekGPS:2059 FixType:Single HasFix:true NumSVs:19}
 DOPS: &{TimeGPS:114010000 Geometric:1.45 Position:1.27 Vertical:1.03 Horizontal:0.74}
 VEL: &{TimeGPS:114010000 North:0m/s East:0m/s Down:0m/s Speed:0m/s Heading:-52.18981° SpeedAccuracy:0m/s}
@@ -764,7 +764,7 @@ SVI: &{ID:23 Type:GLONASS SignalStrength:43 CarrierPhase:998697.36 PseudoRangeRe
 SVI: &{ID:24 Type:GLONASS SignalStrength:37 CarrierPhase:989276.64 PseudoRangeResidual:18499.98km DopplerFrequencyHz:2012.124 Azimuth:144.8° Elevation:55.6°}
 ID(7): 45520717000c0000ffffff7fcca4f32cffffff7f00000b085abd0100dc82
 VER: &{TimeGPS:114010200 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:114010200 Longitude:12.780533853436232 Latitude:57.77767635884813 AltitudeEllipsoid:232.70868370961398m AltitudeMeanSeaLevel:197.6650953635371m HorizontalAccuracy:3.556m VerticalAccuracy:4.705m}
+POS: &{TimeGPS:114010200 Longitude:12.780533853436232° Latitude:57.77767635884813° AltitudeEllipsoid:232.70868370961398m AltitudeMeanSeaLevel:197.6650953635371m HorizontalAccuracy:3.556m VerticalAccuracy:4.705m}
 STAT: &{TimeGPS:114010200 WeekGPS:2059 FixType:Single HasFix:true NumSVs:19}
 DOPS: &{TimeGPS:114010200 Geometric:1.45 Position:1.27 Vertical:1.03 Horizontal:0.74}
 VEL: &{TimeGPS:114010200 North:0m/s East:0m/s Down:-1cm/s Speed:0m/s Heading:-154.33548000000002° SpeedAccuracy:0m/s}
@@ -790,7 +790,7 @@ SVI: &{ID:23 Type:GLONASS SignalStrength:43 CarrierPhase:998701.4400000001 Pseud
 SVI: &{ID:24 Type:GLONASS SignalStrength:37 CarrierPhase:989272.64 PseudoRangeResidual:18499.904km DopplerFrequencyHz:2012.757 Azimuth:144.8° Elevation:55.6°}
 ID(7): 45520717000c0000ffffff7fdda4f32cffffff7f00000b085abd0100ed92
 VER: &{TimeGPS:114010400 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:114010400 Longitude:12.780534099079924 Latitude:57.77767640650312 AltitudeEllipsoid:232.73220956511796m AltitudeMeanSeaLevel:197.6886215784255m HorizontalAccuracy:3.556m VerticalAccuracy:4.704m}
+POS: &{TimeGPS:114010400 Longitude:12.780534099079924° Latitude:57.77767640650312° AltitudeEllipsoid:232.73220956511796m AltitudeMeanSeaLevel:197.6886215784255m HorizontalAccuracy:3.556m VerticalAccuracy:4.704m}
 STAT: &{TimeGPS:114010400 WeekGPS:2059 FixType:Single HasFix:true NumSVs:18}
 DOPS: &{TimeGPS:114010400 Geometric:1.48 Position:1.3 Vertical:1.05 Horizontal:0.76}
 VEL: &{TimeGPS:114010400 North:0m/s East:0m/s Down:0m/s Speed:0m/s Heading:-46.434340000000006° SpeedAccuracy:0m/s}
@@ -815,7 +815,7 @@ SVI: &{ID:23 Type:GLONASS SignalStrength:43 CarrierPhase:998705.52 PseudoRangeRe
 SVI: &{ID:24 Type:GLONASS SignalStrength:37 CarrierPhase:989268.56 PseudoRangeResidual:18499.83km DopplerFrequencyHz:2012.097 Azimuth:144.8° Elevation:55.6°}
 ID(7): 45520717000c0000ffffff7feda4f32cffffff7f00000b085abd0100fd92
 VER: &{TimeGPS:114028600 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:114028600 Longitude:12.780549312727171 Latitude:57.77767381400813 AltitudeEllipsoid:231.3766162963584m AltitudeMeanSeaLevel:196.33304084414746m HorizontalAccuracy:3.5540000000000003m VerticalAccuracy:4.692m}
+POS: &{TimeGPS:114028600 Longitude:12.780549312727171° Latitude:57.777673814008125° AltitudeEllipsoid:231.3766162963584m AltitudeMeanSeaLevel:196.33304084414746m HorizontalAccuracy:3.5540000000000003m VerticalAccuracy:4.692m}
 STAT: &{TimeGPS:114028600 WeekGPS:2059 FixType:Single HasFix:true NumSVs:20}
 DOPS: &{TimeGPS:114028600 Geometric:1.35 Position:1.2 Vertical:0.97 Horizontal:0.6900000000000001}
 VEL: &{TimeGPS:114028600 North:0m/s East:-4cm/s Down:-1cm/s Speed:4cm/s Heading:-79.92677° SpeedAccuracy:0m/s}
@@ -842,7 +842,7 @@ SVI: &{ID:23 Type:GLONASS SignalStrength:42 CarrierPhase:999077.28 PseudoRangeRe
 SVI: &{ID:24 Type:GLONASS SignalStrength:37 CarrierPhase:988903.68 PseudoRangeResidual:18493.004km DopplerFrequencyHz:1997.16 Azimuth:144.6° Elevation:55.800000000000004°}
 ID(7): 45520717000c0000ffffff7ff6a7f32cffffff7f00000b086cbd01001b97
 VER: &{TimeGPS:114028800 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:114028800 Longitude:12.780549694095736 Latitude:57.777674024327524 AltitudeEllipsoid:231.37647337187082m AltitudeMeanSeaLevel:196.3328987167306m HorizontalAccuracy:3.5540000000000003m VerticalAccuracy:4.692m}
+POS: &{TimeGPS:114028800 Longitude:12.780549694095736° Latitude:57.777674024327524° AltitudeEllipsoid:231.37647337187082m AltitudeMeanSeaLevel:196.3328987167306m HorizontalAccuracy:3.5540000000000003m VerticalAccuracy:4.692m}
 STAT: &{TimeGPS:114028800 WeekGPS:2059 FixType:Single HasFix:true NumSVs:20}
 DOPS: &{TimeGPS:114028800 Geometric:1.35 Position:1.2 Vertical:0.97 Horizontal:0.6900000000000001}
 VEL: &{TimeGPS:114028800 North:0m/s East:0m/s Down:1cm/s Speed:0m/s Heading:-179.17061° SpeedAccuracy:0m/s}
@@ -869,7 +869,7 @@ SVI: &{ID:23 Type:GLONASS SignalStrength:42 CarrierPhase:999081.36 PseudoRangeRe
 SVI: &{ID:24 Type:GLONASS SignalStrength:37 CarrierPhase:988899.68 PseudoRangeResidual:18492.93km DopplerFrequencyHz:1996.298 Azimuth:144.6° Elevation:55.800000000000004°}
 ID(7): 45520717000c0000ffffff7f08a8f32cffffff7f00000b086cbd01002ec6
 VER: &{TimeGPS:114029000 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:114029000 Longitude:12.780549844893756 Latitude:57.77767425993257 AltitudeEllipsoid:231.44118783064187m AltitudeMeanSeaLevel:196.39761375804258m HorizontalAccuracy:3.5540000000000003m VerticalAccuracy:4.692m}
+POS: &{TimeGPS:114029000 Longitude:12.780549844893756° Latitude:57.77767425993257° AltitudeEllipsoid:231.44118783064187m AltitudeMeanSeaLevel:196.39761375804258m HorizontalAccuracy:3.5540000000000003m VerticalAccuracy:4.692m}
 STAT: &{TimeGPS:114029000 WeekGPS:2059 FixType:Single HasFix:true NumSVs:20}
 DOPS: &{TimeGPS:114029000 Geometric:1.35 Position:1.2 Vertical:0.97 Horizontal:0.6900000000000001}
 VEL: &{TimeGPS:114029000 North:0m/s East:0m/s Down:0m/s Speed:0m/s Heading:-99.50794000000002° SpeedAccuracy:0m/s}
@@ -896,7 +896,7 @@ SVI: &{ID:23 Type:GLONASS SignalStrength:42 CarrierPhase:999085.4400000001 Pseud
 SVI: &{ID:24 Type:GLONASS SignalStrength:37 CarrierPhase:988895.68 PseudoRangeResidual:18492.856km DopplerFrequencyHz:1997.8690000000001 Azimuth:144.6° Elevation:55.800000000000004°}
 ID(7): 45520717000c0000ffffff7f13a8f32cffffff7f00000b086dbd01003a7a
 VER: &{TimeGPS:114029200 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:114029200 Longitude:12.780549810514758 Latitude:57.77767431919628 AltitudeEllipsoid:231.44634112063795m AltitudeMeanSeaLevel:196.40276711338186m HorizontalAccuracy:3.5540000000000003m VerticalAccuracy:4.692m}
+POS: &{TimeGPS:114029200 Longitude:12.780549810514758° Latitude:57.77767431919628° AltitudeEllipsoid:231.44634112063795m AltitudeMeanSeaLevel:196.40276711338186m HorizontalAccuracy:3.5540000000000003m VerticalAccuracy:4.692m}
 STAT: &{TimeGPS:114029200 WeekGPS:2059 FixType:Single HasFix:true NumSVs:20}
 DOPS: &{TimeGPS:114029200 Geometric:1.35 Position:1.2 Vertical:0.97 Horizontal:0.6900000000000001}
 VEL: &{TimeGPS:114029200 North:0m/s East:0m/s Down:0m/s Speed:0m/s Heading:-111.55766000000001° SpeedAccuracy:0m/s}
@@ -923,7 +923,7 @@ SVI: &{ID:23 Type:GLONASS SignalStrength:42 CarrierPhase:999089.52 PseudoRangeRe
 SVI: &{ID:24 Type:GLONASS SignalStrength:37 CarrierPhase:988891.68 PseudoRangeResidual:18492.78km DopplerFrequencyHz:1997.489 Azimuth:144.6° Elevation:55.800000000000004°}
 ID(7): 45520717000c0000ffffff7f11a8f32cffffff7f00000b086dbd0100385a
 VER: &{TimeGPS:114029400 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:114029400 Longitude:12.780549865388915 Latitude:57.77767425723751 AltitudeEllipsoid:231.4653622675687m AltitudeMeanSeaLevel:196.42178821325396m HorizontalAccuracy:3.5540000000000003m VerticalAccuracy:4.691m}
+POS: &{TimeGPS:114029400 Longitude:12.780549865388915° Latitude:57.77767425723751° AltitudeEllipsoid:231.4653622675687m AltitudeMeanSeaLevel:196.42178821325396m HorizontalAccuracy:3.5540000000000003m VerticalAccuracy:4.691m}
 STAT: &{TimeGPS:114029400 WeekGPS:2059 FixType:Single HasFix:true NumSVs:20}
 DOPS: &{TimeGPS:114029400 Geometric:1.35 Position:1.2 Vertical:0.97 Horizontal:0.6900000000000001}
 VEL: &{TimeGPS:114029400 North:-1cm/s East:0m/s Down:1cm/s Speed:1cm/s Heading:-167.70444000000003° SpeedAccuracy:0m/s}
@@ -950,7 +950,7 @@ SVI: &{ID:23 Type:GLONASS SignalStrength:42 CarrierPhase:999093.68 PseudoRangeRe
 SVI: &{ID:24 Type:GLONASS SignalStrength:37 CarrierPhase:988887.68 PseudoRangeResidual:18492.706km DopplerFrequencyHz:1997.299 Azimuth:144.6° Elevation:55.800000000000004°}
 ID(7): 45520717000c0000ffffff7f17a8f32cffffff7f00000b086dbd01003eba
 VER: &{TimeGPS:114029600 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:114029600 Longitude:12.780549835276595 Latitude:57.77767421657639 AltitudeEllipsoid:231.47866799030453m AltitudeMeanSeaLevel:196.43509383086476m HorizontalAccuracy:3.5540000000000003m VerticalAccuracy:4.691m}
+POS: &{TimeGPS:114029600 Longitude:12.780549835276595° Latitude:57.77767421657639° AltitudeEllipsoid:231.47866799030453m AltitudeMeanSeaLevel:196.43509383086476m HorizontalAccuracy:3.5540000000000003m VerticalAccuracy:4.691m}
 STAT: &{TimeGPS:114029600 WeekGPS:2059 FixType:Single HasFix:true NumSVs:20}
 DOPS: &{TimeGPS:114029600 Geometric:1.35 Position:1.2 Vertical:0.97 Horizontal:0.6900000000000001}
 VEL: &{TimeGPS:114029600 North:0m/s East:0m/s Down:0m/s Speed:0m/s Heading:-49.272450000000006° SpeedAccuracy:0m/s}
@@ -977,7 +977,7 @@ SVI: &{ID:23 Type:GLONASS SignalStrength:42 CarrierPhase:999097.76 PseudoRangeRe
 SVI: &{ID:24 Type:GLONASS SignalStrength:37 CarrierPhase:988883.68 PseudoRangeResidual:18492.632km DopplerFrequencyHz:1996.689 Azimuth:144.6° Elevation:55.800000000000004°}
 ID(7): 45520717000c0000ffffff7f18a8f32cffffff7f00000b086dbd01003fca
 VER: &{TimeGPS:114029800 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:114029800 Longitude:12.780549882151796 Latitude:57.77767398646082 AltitudeEllipsoid:231.4894152926281m AltitudeMeanSeaLevel:196.44584078221752m HorizontalAccuracy:3.5540000000000003m VerticalAccuracy:4.691m}
+POS: &{TimeGPS:114029800 Longitude:12.780549882151796° Latitude:57.77767398646082° AltitudeEllipsoid:231.4894152926281m AltitudeMeanSeaLevel:196.44584078221752m HorizontalAccuracy:3.5540000000000003m VerticalAccuracy:4.691m}
 STAT: &{TimeGPS:114029800 WeekGPS:2059 FixType:Single HasFix:true NumSVs:20}
 DOPS: &{TimeGPS:114029800 Geometric:1.35 Position:1.2 Vertical:0.97 Horizontal:0.6900000000000001}
 VEL: &{TimeGPS:114029800 North:-1cm/s East:0m/s Down:-1cm/s Speed:1cm/s Heading:-166.56387999999998° SpeedAccuracy:0m/s}
@@ -1004,7 +1004,7 @@ SVI: &{ID:23 Type:GLONASS SignalStrength:42 CarrierPhase:999101.84 PseudoRangeRe
 SVI: &{ID:24 Type:GLONASS SignalStrength:37 CarrierPhase:988879.68 PseudoRangeResidual:18492.556km DopplerFrequencyHz:1996.445 Azimuth:144.6° Elevation:55.800000000000004°}
 ID(7): 45520717000c0000ffffff7f21a8f32cffffff7f00000b086dbd0100485a
 VER: &{TimeGPS:114030000 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:114030000 Longitude:12.780549844522422 Latitude:57.77767378785514 AltitudeEllipsoid:231.47624801192433m AltitudeMeanSeaLevel:196.43267311092885m HorizontalAccuracy:3.5540000000000003m VerticalAccuracy:4.691m}
+POS: &{TimeGPS:114030000 Longitude:12.780549844522422° Latitude:57.777673787855136° AltitudeEllipsoid:231.47624801192433m AltitudeMeanSeaLevel:196.43267311092885m HorizontalAccuracy:3.5540000000000003m VerticalAccuracy:4.691m}
 STAT: &{TimeGPS:114030000 WeekGPS:2059 FixType:Single HasFix:true NumSVs:20}
 DOPS: &{TimeGPS:114030000 Geometric:1.35 Position:1.2 Vertical:0.97 Horizontal:0.6900000000000001}
 VEL: &{TimeGPS:114030000 North:0m/s East:0m/s Down:1cm/s Speed:0m/s Heading:-60.89506° SpeedAccuracy:0m/s}
@@ -1031,7 +1031,7 @@ SVI: &{ID:23 Type:GLONASS SignalStrength:42 CarrierPhase:999106 PseudoRangeResid
 SVI: &{ID:24 Type:GLONASS SignalStrength:37 CarrierPhase:988875.68 PseudoRangeResidual:18492.482km DopplerFrequencyHz:1996.6090000000002 Azimuth:144.6° Elevation:55.800000000000004°}
 ID(7): 45520717000c0000ffffff7f21a8f32cffffff7f00000b086ebd0100495e
 VER: &{TimeGPS:114030200 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:114030200 Longitude:12.780550006120293 Latitude:57.777673631907724 AltitudeEllipsoid:231.47966008167714m AltitudeMeanSeaLevel:196.4360850886023m HorizontalAccuracy:3.5540000000000003m VerticalAccuracy:4.691m}
+POS: &{TimeGPS:114030200 Longitude:12.780550006120293° Latitude:57.777673631907724° AltitudeEllipsoid:231.47966008167714m AltitudeMeanSeaLevel:196.4360850886023m HorizontalAccuracy:3.5540000000000003m VerticalAccuracy:4.691m}
 STAT: &{TimeGPS:114030200 WeekGPS:2059 FixType:Single HasFix:true NumSVs:20}
 DOPS: &{TimeGPS:114030200 Geometric:1.35 Position:1.2 Vertical:0.97 Horizontal:0.6900000000000001}
 VEL: &{TimeGPS:114030200 North:-1cm/s East:0m/s Down:-1cm/s Speed:1cm/s Heading:167.37574° SpeedAccuracy:0m/s}
@@ -1058,7 +1058,7 @@ SVI: &{ID:23 Type:GLONASS SignalStrength:42 CarrierPhase:999110.0800000001 Pseud
 SVI: &{ID:24 Type:GLONASS SignalStrength:37 CarrierPhase:988871.68 PseudoRangeResidual:18492.408km DopplerFrequencyHz:1996.575 Azimuth:144.6° Elevation:55.800000000000004°}
 ID(7): 45520717000c0000ffffff7f2ea8f32cffffff7f00000b086ebd0100562e
 VER: &{TimeGPS:114030400 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:114030400 Longitude:12.780550172037954 Latitude:57.77767353489487 AltitudeEllipsoid:231.50327660515904m AltitudeMeanSeaLevel:196.45970162822064m HorizontalAccuracy:3.5540000000000003m VerticalAccuracy:4.691m}
+POS: &{TimeGPS:114030400 Longitude:12.780550172037954° Latitude:57.77767353489487° AltitudeEllipsoid:231.50327660515904m AltitudeMeanSeaLevel:196.45970162822064m HorizontalAccuracy:3.5540000000000003m VerticalAccuracy:4.691m}
 STAT: &{TimeGPS:114030400 WeekGPS:2059 FixType:Single HasFix:true NumSVs:20}
 DOPS: &{TimeGPS:114030400 Geometric:1.35 Position:1.2 Vertical:0.97 Horizontal:0.6900000000000001}
 VEL: &{TimeGPS:114030400 North:0m/s East:0m/s Down:0m/s Speed:0m/s Heading:-67.59143° SpeedAccuracy:0m/s}
@@ -1085,7 +1085,7 @@ SVI: &{ID:23 Type:GLONASS SignalStrength:42 CarrierPhase:999114.16 PseudoRangeRe
 SVI: &{ID:24 Type:GLONASS SignalStrength:37 CarrierPhase:988867.76 PseudoRangeResidual:18492.332km DopplerFrequencyHz:1996.584 Azimuth:144.6° Elevation:55.800000000000004°}
 ID(7): 45520717000c0000ffffff7f3da8f32cffffff7f00000b086ebd0100651e
 VER: &{TimeGPS:114030600 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:114030600 Longitude:12.780550208127943 Latitude:57.77767342009928 AltitudeEllipsoid:231.51107166241854m AltitudeMeanSeaLevel:196.4674965246604m HorizontalAccuracy:3.5540000000000003m VerticalAccuracy:4.691m}
+POS: &{TimeGPS:114030600 Longitude:12.780550208127943° Latitude:57.77767342009928° AltitudeEllipsoid:231.51107166241854m AltitudeMeanSeaLevel:196.4674965246604m HorizontalAccuracy:3.5540000000000003m VerticalAccuracy:4.691m}
 STAT: &{TimeGPS:114030600 WeekGPS:2059 FixType:Single HasFix:true NumSVs:20}
 DOPS: &{TimeGPS:114030600 Geometric:1.35 Position:1.2 Vertical:0.97 Horizontal:0.6900000000000001}
 VEL: &{TimeGPS:114030600 North:0m/s East:0m/s Down:0m/s Speed:0m/s Heading:-137.25542000000002° SpeedAccuracy:0m/s}
@@ -1112,7 +1112,7 @@ SVI: &{ID:23 Type:GLONASS SignalStrength:42 CarrierPhase:999118.24 PseudoRangeRe
 SVI: &{ID:24 Type:GLONASS SignalStrength:37 CarrierPhase:988863.76 PseudoRangeResidual:18492.258km DopplerFrequencyHz:1996.07 Azimuth:144.6° Elevation:55.800000000000004°}
 ID(7): 45520717000c0000ffffff7f42a8f32cffffff7f00000b086ebd01006a6e
 VER: &{TimeGPS:114030800 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:114030800 Longitude:12.78055008609819 Latitude:57.77767333931089 AltitudeEllipsoid:231.50225431565195m AltitudeMeanSeaLevel:196.45867889918685m HorizontalAccuracy:3.5540000000000003m VerticalAccuracy:4.69m}
+POS: &{TimeGPS:114030800 Longitude:12.78055008609819° Latitude:57.77767333931089° AltitudeEllipsoid:231.50225431565195m AltitudeMeanSeaLevel:196.45867889918685m HorizontalAccuracy:3.5540000000000003m VerticalAccuracy:4.69m}
 STAT: &{TimeGPS:114030800 WeekGPS:2059 FixType:Single HasFix:true NumSVs:20}
 DOPS: &{TimeGPS:114030800 Geometric:1.35 Position:1.2 Vertical:0.97 Horizontal:0.6900000000000001}
 VEL: &{TimeGPS:114030800 North:0m/s East:0m/s Down:2cm/s Speed:0m/s Heading:-136.0033° SpeedAccuracy:0m/s}
@@ -1139,7 +1139,7 @@ SVI: &{ID:23 Type:GLONASS SignalStrength:42 CarrierPhase:999122.4 PseudoRangeRes
 SVI: &{ID:24 Type:GLONASS SignalStrength:37 CarrierPhase:988859.76 PseudoRangeResidual:18492.184km DopplerFrequencyHz:1996.025 Azimuth:144.6° Elevation:55.800000000000004°}
 ID(7): 45520717000c0000ffffff7f3ca8f32cffffff7f00000b086ebd0100640e
 VER: &{TimeGPS:114031000 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:114031000 Longitude:12.780549887399806 Latitude:57.77767323028346 AltitudeEllipsoid:231.50344614032656m AltitudeMeanSeaLevel:196.45987030954444m HorizontalAccuracy:3.5540000000000003m VerticalAccuracy:4.69m}
+POS: &{TimeGPS:114031000 Longitude:12.780549887399806° Latitude:57.77767323028346° AltitudeEllipsoid:231.50344614032656m AltitudeMeanSeaLevel:196.45987030954444m HorizontalAccuracy:3.5540000000000003m VerticalAccuracy:4.69m}
 STAT: &{TimeGPS:114031000 WeekGPS:2059 FixType:Single HasFix:true NumSVs:20}
 DOPS: &{TimeGPS:114031000 Geometric:1.35 Position:1.2 Vertical:0.97 Horizontal:0.6900000000000001}
 VEL: &{TimeGPS:114031000 North:0m/s East:0m/s Down:0m/s Speed:0m/s Heading:-163.11975° SpeedAccuracy:0m/s}
@@ -1166,7 +1166,7 @@ SVI: &{ID:23 Type:GLONASS SignalStrength:42 CarrierPhase:999126.48 PseudoRangeRe
 SVI: &{ID:24 Type:GLONASS SignalStrength:37 CarrierPhase:988855.76 PseudoRangeResidual:18492.108km DopplerFrequencyHz:1995.5800000000002 Azimuth:144.6° Elevation:55.800000000000004°}
 ID(7): 45520717000c0000ffffff7f33a8f32cffffff7f00000b086fbd01005c82
 VER: &{TimeGPS:114031200 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:114031200 Longitude:12.780549735280754 Latitude:57.77767311072648 AltitudeEllipsoid:231.50391024257988m AltitudeMeanSeaLevel:196.46033403131094m HorizontalAccuracy:3.5540000000000003m VerticalAccuracy:4.69m}
+POS: &{TimeGPS:114031200 Longitude:12.780549735280754° Latitude:57.77767311072648° AltitudeEllipsoid:231.50391024257988m AltitudeMeanSeaLevel:196.46033403131094m HorizontalAccuracy:3.5540000000000003m VerticalAccuracy:4.69m}
 STAT: &{TimeGPS:114031200 WeekGPS:2059 FixType:Single HasFix:true NumSVs:20}
 DOPS: &{TimeGPS:114031200 Geometric:1.35 Position:1.2 Vertical:0.97 Horizontal:0.6900000000000001}
 VEL: &{TimeGPS:114031200 North:0m/s East:0m/s Down:0m/s Speed:0m/s Heading:-0.83429° SpeedAccuracy:0m/s}

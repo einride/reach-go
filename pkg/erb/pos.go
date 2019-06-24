@@ -35,9 +35,9 @@ type POS struct {
 	// TimeGPS is the time of week in milliseconds of the navigation epoch.
 	TimeGPS uint32
 	// Longitude component.
-	Longitude float64
+	Longitude unit.Angle
 	// Latitude component.
-	Latitude float64
+	Latitude unit.Angle
 	// AltitudeEllipsoid is the height above ellipsoid.
 	AltitudeEllipsoid unit.Distance
 	// AltitudeMeanSeaLevel is the height above mean sea level.
@@ -53,16 +53,16 @@ func (p *POS) unmarshal(b []byte) error {
 		return xerrors.Errorf("unmarshal POS: unexpected length: %d, expected: %d", len(b), lengthOfPOS)
 	}
 	p.TimeGPS = binary.LittleEndian.Uint32(b[indexOfTimeGPS : indexOfTimeGPS+lengthOfTimeGPS])
-	p.Longitude = math.Float64frombits(
+	p.Longitude = unit.Angle(math.Float64frombits(
 		binary.LittleEndian.Uint64(
-			b[indexOfPOSLongitude : indexOfPOSLongitude+lengthOfPOSLongitude],
+			b[indexOfPOSLongitude:indexOfPOSLongitude+lengthOfPOSLongitude],
 		),
-	)
-	p.Latitude = math.Float64frombits(
+	)) * unit.Degree
+	p.Latitude = unit.Angle(math.Float64frombits(
 		binary.LittleEndian.Uint64(
-			b[indexOfPOSLatitude : indexOfPOSLatitude+lengthOfPOSLatitude],
+			b[indexOfPOSLatitude:indexOfPOSLatitude+lengthOfPOSLatitude],
 		),
-	)
+	)) * unit.Degree
 	p.AltitudeEllipsoid = unit.Distance(
 		math.Float64frombits(
 			binary.LittleEndian.Uint64(
