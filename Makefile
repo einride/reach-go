@@ -33,11 +33,6 @@ build/rules.mk: build
 markdown-lint: $(MARKDOWNLINT)
 	$(MARKDOWNLINT) --ignore build .
 
-# go-generate: generate Go code
-.PHONY: go-generate
-go-generate: $(GOBIN)
-	go generate -v -x ./...
-
 # go-mod-tidy: update Go module files
 .PHONY: go-mod-tidy
 go-mod-tidy:
@@ -58,3 +53,17 @@ go-test:
 .PHONY: go-review
 go-review: $(GOREVIEW)
 	$(GOREVIEW) -c 1 ./...
+
+# go-generate: generate Go code
+.PHONY: go-generate
+go-generate: \
+	pkg/erb/fixtype_string.go \
+	pkg/erb/svtype_string.go
+
+pkg/erb/fixtype_string.go: pkg/erb/fixtype.go $(GOBIN)
+	$(GOBIN) -m -run golang.org/x/tools/cmd/stringer \
+		-type FixType -trimprefix FixType -output $@ $<
+
+pkg/erb/svtype_string.go: pkg/erb/svtype.go $(GOBIN)
+	$(GOBIN) -m -run golang.org/x/tools/cmd/stringer \
+		-type SVType -trimprefix SVType -output $@ $<
