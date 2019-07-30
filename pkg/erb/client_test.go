@@ -3,15 +3,19 @@ package erb
 import (
 	"bufio"
 	"bytes"
+	"context"
 	"encoding/hex"
 	"fmt"
+	"io"
 	"io/ioutil"
 	"os"
 	"strconv"
 	"strings"
 	"testing"
+	"time"
 
 	"github.com/stretchr/testify/require"
+	"golang.org/x/xerrors"
 )
 
 func TestScanner_HexDump(t *testing.T) {
@@ -25,9 +29,15 @@ func TestScanner_HexDump(t *testing.T) {
 		tt := tt
 		t.Run(tt.inputFile, func(t *testing.T) {
 			data := loadHexDump(t, tt.inputFile)
-			sc := NewScanner(bytes.NewReader(data))
+			sc := NewClient(newMockConn(bytes.NewReader(data)))
 			var buf bytes.Buffer
-			for sc.Scan() {
+			for {
+				if err := sc.Receive(context.Background()); err != nil {
+					if xerrors.Is(err, io.EOF) {
+						break
+					}
+					require.NoError(t, err)
+				}
 				switch sc.ID() {
 				case IDVER:
 					_, _ = fmt.Fprintf(&buf, "%v: %+v\n", sc.ID(), sc.VER())
@@ -48,7 +58,6 @@ func TestScanner_HexDump(t *testing.T) {
 					_, _ = fmt.Fprintf(&buf, "%v: %s\n", sc.ID(), hex.EncodeToString(sc.Bytes()))
 				}
 			}
-			require.NoError(t, sc.Err())
 			if shouldUpdateGoldenFiles() {
 				require.NoError(t, ioutil.WriteFile(tt.goldenFile, buf.Bytes(), 0644))
 			}
@@ -80,4 +89,24 @@ func loadHexDump(t *testing.T, filename string) []byte {
 	}
 	require.NoError(t, sc.Err())
 	return data
+}
+
+type mockConn struct {
+	r io.Reader
+}
+
+func newMockConn(r io.Reader) *mockConn {
+	return &mockConn{r: r}
+}
+
+func (m mockConn) Read(p []byte) (n int, err error) {
+	return m.r.Read(p)
+}
+
+func (m mockConn) Close() error {
+	return nil
+}
+
+func (m mockConn) SetReadDeadline(time.Time) error {
+	return nil
 }

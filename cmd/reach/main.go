@@ -1,6 +1,7 @@
 package main
 
 import (
+	"context"
 	"encoding/hex"
 	"fmt"
 	"net"
@@ -22,8 +23,11 @@ func main() {
 			panic(err)
 		}
 	}()
-	sc := erb.NewScanner(conn)
-	for sc.Scan() {
+	sc := erb.NewClient(conn)
+	for {
+		if err := sc.Receive(context.Background()); err != nil {
+			panic(err)
+		}
 		switch sc.ID() {
 		case erb.IDVER:
 			fmt.Printf("%v: %+v\n", sc.ID(), sc.VER())
@@ -43,8 +47,5 @@ func main() {
 		default:
 			fmt.Printf("%v: %s\n", sc.ID(), hex.EncodeToString(sc.Bytes()))
 		}
-	}
-	if sc.Err() != nil {
-		panic(sc.Err())
 	}
 }
