@@ -12,7 +12,8 @@ import (
 
 func main() {
 	if len(os.Args) < 2 {
-		fmt.Println("required argument: <address>")
+		fmt.Println("usage: reach <host:port>")
+		os.Exit(1)
 	}
 	conn, err := net.Dial("tcp", os.Args[1])
 	if err != nil {
