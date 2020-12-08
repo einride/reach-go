@@ -3,8 +3,6 @@ package erb
 import (
 	"encoding/binary"
 	"fmt"
-
-	"github.com/einride/unit"
 )
 
 // structure of SVI message.
@@ -75,14 +73,14 @@ type SV struct {
 	SignalStrength float64
 	// CarrierPhase of SV in cycles.
 	CarrierPhase float64
-	// PseudoRangeResidual of SV.
-	PseudoRangeResidual unit.Distance
+	// PseudoRangeResidual of SV (m).
+	PseudoRangeResidualMeters int32
 	// DopplerFrequencyHz of SV.
 	DopplerFrequencyHz float64
-	// Azimuth of SV.
-	Azimuth unit.Angle
-	// Elevation of SV.
-	Elevation unit.Angle
+	// Azimuth of SV (degrees).
+	AzimuthDegrees float64
+	// Elevation of SV (degrees).
+	ElevationDegrees float64
 }
 
 func (s *SV) unmarshal(b []byte, i int) error {
@@ -99,17 +97,17 @@ func (s *SV) unmarshal(b []byte, i int) error {
 	s.CarrierPhase = scaleOfSVCarrierPhase * float64(int32(binary.LittleEndian.Uint32(
 		b[offset+indexOfSVCarrierPhase:offset+indexOfSVCarrierPhase+lengthOfSVCarrierPhase],
 	)))
-	s.PseudoRangeResidual = unit.Distance(int32(binary.LittleEndian.Uint32(
-		b[offset+indexOfSVPseudoRangeResidual:offset+indexOfSVPseudoRangeResidual+lengthOfSVPseudoRangeResidual],
-	))) * unit.Metre
+	s.PseudoRangeResidualMeters = int32(binary.LittleEndian.Uint32(
+		b[offset+indexOfSVPseudoRangeResidual : offset+indexOfSVPseudoRangeResidual+lengthOfSVPseudoRangeResidual],
+	))
 	s.DopplerFrequencyHz = scaleOfSVDopplerFrequency * float64(int32(binary.LittleEndian.Uint32(
 		b[offset+indexOfSVDopplerFrequency:offset+indexOfSVDopplerFrequency+lengthOfSVDopplerFrequency],
 	)))
-	s.Azimuth = scaleOfSVAzimuth * unit.Angle(binary.LittleEndian.Uint16(
+	s.AzimuthDegrees = scaleOfSVAzimuth * float64(binary.LittleEndian.Uint16(
 		b[offset+indexOfSVAzimuth:offset+indexOfSVAzimuth+lengthOfSVAzimuth],
-	)) * unit.Degree
-	s.Elevation = scaleOfSVElevation * unit.Angle(binary.LittleEndian.Uint16(
+	))
+	s.ElevationDegrees = scaleOfSVElevation * float64(binary.LittleEndian.Uint16(
 		b[offset+indexOfSVElevation:offset+indexOfSVElevation+lengthOfSVElevation],
-	)) * unit.Degree
+	))
 	return nil
 }

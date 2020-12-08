@@ -4,8 +4,6 @@ import (
 	"encoding/binary"
 	"fmt"
 	"math"
-
-	"github.com/einride/unit"
 )
 
 // structure of POS message.
@@ -34,18 +32,18 @@ var _ [lengthOfPOS]struct{} = [indexOfPOSVerticalAccuracy + lengthOfPOSVerticalA
 type POS struct {
 	// TimeGPS is the time of week in milliseconds of the navigation epoch.
 	TimeGPS uint32
-	// Longitude component.
-	Longitude unit.Angle
-	// Latitude component.
-	Latitude unit.Angle
-	// AltitudeEllipsoid is the height above ellipsoid.
-	AltitudeEllipsoid unit.Distance
-	// AltitudeMeanSeaLevel is the height above mean sea level.
-	AltitudeMeanSeaLevel unit.Distance
-	// HorizontalAccuracy is the horizontal accuracy estimate in millimeters.
-	HorizontalAccuracy unit.Distance
-	// VerticalAccuracy is the vertical accuracy estimate in millimeters.
-	VerticalAccuracy unit.Distance
+	// Longitude component (degrees).
+	LongitudeDegrees float64
+	// Latitude component (degrees).
+	LatitudeDegrees float64
+	// AltitudeEllipsoid is the height above ellipsoid (m).
+	AltitudeEllipsoidMeters float64
+	// AltitudeMeanSeaLevel is the height above mean sea level (m).
+	AltitudeMeanSeaLevelMeters float64
+	// HorizontalAccuracyMillimeters is the horizontal accuracy estimate (mm).
+	HorizontalAccuracyMillimeters uint32
+	// VerticalAccuracy is the vertical accuracy estimate (mm).
+	VerticalAccuracyMillimeters uint32
 }
 
 func (p *POS) unmarshal(b []byte) error {
@@ -53,39 +51,31 @@ func (p *POS) unmarshal(b []byte) error {
 		return fmt.Errorf("unmarshal POS: unexpected length: %d, expected: %d", len(b), lengthOfPOS)
 	}
 	p.TimeGPS = binary.LittleEndian.Uint32(b[indexOfTimeGPS : indexOfTimeGPS+lengthOfTimeGPS])
-	p.Longitude = unit.Angle(math.Float64frombits(
+	p.LongitudeDegrees = math.Float64frombits(
 		binary.LittleEndian.Uint64(
-			b[indexOfPOSLongitude:indexOfPOSLongitude+lengthOfPOSLongitude],
+			b[indexOfPOSLongitude : indexOfPOSLongitude+lengthOfPOSLongitude],
 		),
-	)) * unit.Degree
-	p.Latitude = unit.Angle(math.Float64frombits(
+	)
+	p.LatitudeDegrees = math.Float64frombits(
 		binary.LittleEndian.Uint64(
-			b[indexOfPOSLatitude:indexOfPOSLatitude+lengthOfPOSLatitude],
+			b[indexOfPOSLatitude : indexOfPOSLatitude+lengthOfPOSLatitude],
 		),
-	)) * unit.Degree
-	p.AltitudeEllipsoid = unit.Distance(
-		math.Float64frombits(
-			binary.LittleEndian.Uint64(
-				b[indexOfPOSAltitudeEllipsoid:indexOfPOSAltitudeEllipsoid+lengthOfPOSAltitudeEllipsoid],
-			),
+	)
+	p.AltitudeEllipsoidMeters = math.Float64frombits(
+		binary.LittleEndian.Uint64(
+			b[indexOfPOSAltitudeEllipsoid : indexOfPOSAltitudeEllipsoid+lengthOfPOSAltitudeEllipsoid],
 		),
-	) * unit.Metre
-	p.AltitudeMeanSeaLevel = unit.Distance(
-		math.Float64frombits(
-			binary.LittleEndian.Uint64(
-				b[indexOfPOSAltitudeMeanSeaLevel:indexOfPOSAltitudeMeanSeaLevel+lengthOfPOSAltitudeMeanSeaLevel],
-			),
+	)
+	p.AltitudeMeanSeaLevelMeters = math.Float64frombits(
+		binary.LittleEndian.Uint64(
+			b[indexOfPOSAltitudeMeanSeaLevel : indexOfPOSAltitudeMeanSeaLevel+lengthOfPOSAltitudeMeanSeaLevel],
 		),
-	) * unit.Metre
-	p.HorizontalAccuracy = unit.Distance(
-		binary.LittleEndian.Uint32(
-			b[indexOfPOSHorizontalAccuracy:indexOfPOSHorizontalAccuracy+lengthOfPOSHorizontalAccuracy],
-		),
-	) * unit.Milli * unit.Metre
-	p.VerticalAccuracy = unit.Distance(
-		binary.LittleEndian.Uint32(
-			b[indexOfPOSVerticalAccuracy:indexOfPOSVerticalAccuracy+lengthOfPOSVerticalAccuracy],
-		),
-	) * unit.Milli * unit.Metre
+	)
+	p.HorizontalAccuracyMillimeters = binary.LittleEndian.Uint32(
+		b[indexOfPOSHorizontalAccuracy : indexOfPOSHorizontalAccuracy+lengthOfPOSHorizontalAccuracy],
+	)
+	p.VerticalAccuracyMillimeters = binary.LittleEndian.Uint32(
+		b[indexOfPOSVerticalAccuracy : indexOfPOSVerticalAccuracy+lengthOfPOSVerticalAccuracy],
+	)
 	return nil
 }
