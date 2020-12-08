@@ -15,7 +15,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/stretchr/testify/require"
+	"gotest.tools/v3/assert"
 )
 
 func TestScanner_HexDump(t *testing.T) {
@@ -36,7 +36,7 @@ func TestScanner_HexDump(t *testing.T) {
 					if errors.Is(err, io.EOF) {
 						break
 					}
-					require.NoError(t, err)
+					assert.NilError(t, err)
 				}
 				switch sc.ID() {
 				case IDVER:
@@ -59,7 +59,7 @@ func TestScanner_HexDump(t *testing.T) {
 				}
 			}
 			if shouldUpdateGoldenFiles() {
-				require.NoError(t, ioutil.WriteFile(tt.goldenFile, buf.Bytes(), 0644))
+				assert.NilError(t, ioutil.WriteFile(tt.goldenFile, buf.Bytes(), 0644))
 			}
 			requireGoldenFileContent(t, tt.goldenFile, buf.String())
 		})
@@ -70,9 +70,9 @@ func loadHexDump(t *testing.T, filename string) []byte {
 	t.Helper()
 	var data []byte
 	f, err := os.Open(filename)
-	require.NoError(t, err)
+	assert.NilError(t, err)
 	defer func() {
-		require.NoError(t, f.Close())
+		assert.NilError(t, f.Close())
 	}()
 	sc := bufio.NewScanner(f)
 	sc.Split(bufio.ScanLines)
@@ -83,11 +83,11 @@ func loadHexDump(t *testing.T, filename string) []byte {
 		}
 		for _, field := range fields[1:] {
 			b, err := strconv.ParseUint(field, 8, 8)
-			require.NoError(t, err)
+			assert.NilError(t, err)
 			data = append(data, byte(b))
 		}
 	}
-	require.NoError(t, sc.Err())
+	assert.NilError(t, sc.Err())
 	return data
 }
 
