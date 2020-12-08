@@ -2,8 +2,7 @@ package erb
 
 import (
 	"encoding/binary"
-
-	"golang.org/x/xerrors"
+	"fmt"
 )
 
 // structure of VER message.
@@ -36,7 +35,7 @@ type VER struct {
 
 func (v *VER) unmarshal(b []byte) error {
 	if len(b) != lengthOfVER {
-		return xerrors.Errorf("unmarshal VER: unexpected length: %d, expected: %d", len(b), lengthOfVER)
+		return fmt.Errorf("unmarshal VER: unexpected length: %d, expected: %d", len(b), lengthOfVER)
 	}
 	v.TimeGPS = binary.LittleEndian.Uint32(b[indexOfTimeGPS : indexOfTimeGPS+lengthOfTimeGPS])
 	v.High = b[indexOfVERHigh]

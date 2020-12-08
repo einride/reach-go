@@ -5,6 +5,7 @@ import (
 	"bytes"
 	"context"
 	"encoding/hex"
+	"errors"
 	"fmt"
 	"io"
 	"io/ioutil"
@@ -15,7 +16,6 @@ import (
 	"time"
 
 	"github.com/stretchr/testify/require"
-	"golang.org/x/xerrors"
 )
 
 func TestScanner_HexDump(t *testing.T) {
@@ -33,7 +33,7 @@ func TestScanner_HexDump(t *testing.T) {
 			var buf bytes.Buffer
 			for {
 				if err := sc.Receive(context.Background()); err != nil {
-					if xerrors.Is(err, io.EOF) {
+					if errors.Is(err, io.EOF) {
 						break
 					}
 					require.NoError(t, err)

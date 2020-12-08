@@ -2,10 +2,10 @@ package erb
 
 import (
 	"encoding/binary"
+	"fmt"
 	"math"
 
 	"github.com/einride/unit"
-	"golang.org/x/xerrors"
 )
 
 // structure of POS message.
@@ -50,7 +50,7 @@ type POS struct {
 
 func (p *POS) unmarshal(b []byte) error {
 	if len(b) != lengthOfPOS {
-		return xerrors.Errorf("unmarshal POS: unexpected length: %d, expected: %d", len(b), lengthOfPOS)
+		return fmt.Errorf("unmarshal POS: unexpected length: %d, expected: %d", len(b), lengthOfPOS)
 	}
 	p.TimeGPS = binary.LittleEndian.Uint32(b[indexOfTimeGPS : indexOfTimeGPS+lengthOfTimeGPS])
 	p.Longitude = unit.Angle(math.Float64frombits(

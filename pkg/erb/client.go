@@ -4,10 +4,9 @@ import (
 	"bufio"
 	"context"
 	"encoding/binary"
+	"fmt"
 	"io"
 	"time"
-
-	"golang.org/x/xerrors"
 )
 
 // Client is an ERB client.
@@ -43,13 +42,13 @@ func NewClient(conn Conn) *Client {
 func (c *Client) Receive(ctx context.Context) error {
 	deadline, _ := ctx.Deadline()
 	if err := c.conn.SetReadDeadline(deadline); err != nil {
-		return xerrors.Errorf("erb client: receive: %w", err)
+		return fmt.Errorf("erb client: receive: %w", err)
 	}
 	if ok := c.sc.Scan(); !ok {
 		if c.sc.Err() == nil {
-			return xerrors.Errorf("erb client: receive: %w", io.EOF)
+			return fmt.Errorf("erb client: receive: %w", io.EOF)
 		}
-		return xerrors.Errorf("erb client: receive: %w", c.sc.Err())
+		return fmt.Errorf("erb client: receive: %w", c.sc.Err())
 	}
 	c.id = ID(c.sc.Bytes()[indexOfMessageID])
 	lengthOfPayload := binary.LittleEndian.Uint16(
@@ -74,7 +73,7 @@ func (c *Client) Receive(ctx context.Context) error {
 		c.svIndex = 0
 	}
 	if err != nil {
-		return xerrors.Errorf("erb client: receive: %w", err)
+		return fmt.Errorf("erb client: receive: %w", err)
 	}
 	if c.id == IDVER {
 		isProtocolVersionSupported :=
@@ -82,9 +81,11 @@ func (c *Client) Receive(ctx context.Context) error {
 				c.ver.Medium == SupportedProtocolVersionMedium &&
 				c.ver.Low == SupportedProtocolVersionLow
 		if !isProtocolVersionSupported {
-			return xerrors.Errorf(
+			return fmt.Errorf(
 				"erb client: receive: unsupported protocol version: %d.%d.%d",
-				c.ver.High, c.ver.Medium, c.ver.Low,
+				c.ver.High,
+				c.ver.Medium,
+				c.ver.Low,
 			)
 		}
 	}
@@ -141,7 +142,7 @@ func (c *Client) Bytes() []byte {
 
 func (c *Client) Close() error {
 	if err := c.conn.Close(); err != nil {
-		return xerrors.Errorf("erb client: close: %w", err)
+		return fmt.Errorf("erb client: close: %w", err)
 	}
 	return nil
 }
