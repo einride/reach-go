@@ -2,8 +2,7 @@ package erb
 
 import (
 	"encoding/binary"
-
-	"golang.org/x/xerrors"
+	"fmt"
 )
 
 // structure of DOPS message.
@@ -45,7 +44,7 @@ type DOPS struct {
 
 func (d *DOPS) unmarshal(b []byte) error {
 	if len(b) != lengthOfDOPS {
-		return xerrors.Errorf("unmarshal DOPS: unexpected length: %d, expected: %d", len(b), lengthOfDOPS)
+		return fmt.Errorf("unmarshal DOPS: unexpected length: %d, expected: %d", len(b), lengthOfDOPS)
 	}
 	d.TimeGPS = binary.LittleEndian.Uint32(b[indexOfTimeGPS : indexOfTimeGPS+lengthOfTimeGPS])
 	d.Geometric = scaleOfDOPS * float64(

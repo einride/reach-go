@@ -1,2 +1,3 @@
 .idea
-.gobincache
+tools/*/*/
+node_modules/

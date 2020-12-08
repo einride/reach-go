@@ -2,8 +2,7 @@ package erb
 
 import (
 	"encoding/binary"
-
-	"golang.org/x/xerrors"
+	"fmt"
 )
 
 // structure of STAT message.
@@ -38,7 +37,7 @@ type STAT struct {
 
 func (s *STAT) unmarshal(b []byte) error {
 	if len(b) != lengthOfSTAT {
-		return xerrors.Errorf("unmarshal STAT: unexpected length: %d, expected: %d", len(b), lengthOfSTAT)
+		return fmt.Errorf("unmarshal STAT: unexpected length: %d, expected: %d", len(b), lengthOfSTAT)
 	}
 	s.TimeGPS = binary.LittleEndian.Uint32(b[indexOfTimeGPS : indexOfTimeGPS+lengthOfTimeGPS])
 	s.WeekGPS = binary.LittleEndian.Uint16(b[indexOfSTATWeekGPS : indexOfSTATWeekGPS+lengthOfSTATWeekGPS])
@@ -49,7 +48,7 @@ func (s *STAT) unmarshal(b []byte) error {
 	case 0x01:
 		s.HasFix = true
 	default:
-		return xerrors.Errorf("unmarshal status: unexpected value of fix status: %d", b[indexOfSTATHasFix])
+		return fmt.Errorf("unmarshal status: unexpected value of fix status: %d", b[indexOfSTATHasFix])
 	}
 	s.NumSVs = b[indexOfSTATNumSatellites]
 	return nil

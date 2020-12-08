@@ -2,9 +2,9 @@ package erb
 
 import (
 	"encoding/binary"
+	"fmt"
 
 	"github.com/einride/unit"
-	"golang.org/x/xerrors"
 )
 
 // structure of VEL message.
@@ -50,7 +50,7 @@ type VEL struct {
 
 func (v *VEL) unmarshal(b []byte) error {
 	if len(b) != lengthOfVEL {
-		return xerrors.Errorf("unmarshal VEL: unexpected length: %d, expected: %d", len(b), lengthOfVEL)
+		return fmt.Errorf("unmarshal VEL: unexpected length: %d, expected: %d", len(b), lengthOfVEL)
 	}
 	v.TimeGPS = binary.LittleEndian.Uint32(b[indexOfTimeGPS : indexOfTimeGPS+lengthOfTimeGPS])
 	v.North = unit.Speed(

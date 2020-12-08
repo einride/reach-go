@@ -3,8 +3,7 @@ package erb
 import (
 	"bytes"
 	"encoding/binary"
-
-	"golang.org/x/xerrors"
+	"fmt"
 )
 
 const (
@@ -54,7 +53,7 @@ func scanPackets(data []byte, _ bool) (advance int, token []byte, err error) {
 	expectedChecksum := fletcher(packet[indexOfMessageID:indexOfChecksum(payloadLength)])
 	actualChecksum := binary.LittleEndian.Uint16(packet[indexOfChecksum(payloadLength):])
 	if expectedChecksum != actualChecksum {
-		return 0, nil, xerrors.Errorf(
+		return 0, nil, fmt.Errorf(
 			"checksum mismatch: expected: 0x%x, actual: 0x%x",
 			expectedChecksum,
 			actualChecksum,

@@ -1,5 +1,5 @@
-// +build tools
+//+build tool
 
-package tools
+package tool
 
 import _ "golang.org/x/tools/cmd/stringer"

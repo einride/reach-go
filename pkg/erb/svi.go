@@ -2,9 +2,9 @@ package erb
 
 import (
 	"encoding/binary"
+	"fmt"
 
 	"github.com/einride/unit"
-	"golang.org/x/xerrors"
 )
 
 // structure of SVI message.
@@ -58,7 +58,7 @@ type SVI struct {
 func (s *SVI) unmarshal(b []byte) error {
 	const expectedLength = indexOfNumSVs + lengthOfNumSVs
 	if len(b) < expectedLength {
-		return xerrors.Errorf("unmarshal SVI: unexpected length: %d, expected: %d", len(b), expectedLength)
+		return fmt.Errorf("unmarshal SVI: unexpected length: %d, expected: %d", len(b), expectedLength)
 	}
 	s.TimeGPS = binary.LittleEndian.Uint32(b[indexOfTimeGPS : indexOfTimeGPS+lengthOfTimeGPS])
 	s.NumSVs = b[indexOfNumSVs]
@@ -89,7 +89,7 @@ func (s *SV) unmarshal(b []byte, i int) error {
 	offset := i * lengthOfSV
 	expectedLength := indexOfSV + offset + lengthOfSV
 	if len(b) < expectedLength {
-		return xerrors.Errorf("unmarshal SV: unexpected length: %d, expected: %d", len(b), expectedLength)
+		return fmt.Errorf("unmarshal SV: unexpected length: %d, expected: %d", len(b), expectedLength)
 	}
 	s.ID = b[offset+indexOfSVID]
 	s.Type = SVType(b[offset+indexOfSVType])
