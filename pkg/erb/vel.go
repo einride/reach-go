@@ -3,8 +3,6 @@ package erb
 import (
 	"encoding/binary"
 	"fmt"
-
-	"github.com/einride/unit"
 )
 
 // structure of VEL message.
@@ -34,18 +32,18 @@ var _ [lengthOfVEL]struct{} = [indexOfVELSpeedAccuracy + lengthOfVELSpeedAccurac
 type VEL struct {
 	// TimeGPS is the time of week in milliseconds of the navigation epoch.
 	TimeGPS uint32
-	// North velocity component.
-	North unit.Speed
-	// East velocity component.
-	East unit.Speed
-	// Down velocity component.
-	Down unit.Speed
-	// Speed is the 2D ground speed.
-	Speed unit.Speed
+	// North velocity component (cm/s).
+	NorthCentimetersPerSecond int32
+	// East velocity component (cm/s).
+	EastCentimetersPerSecond int32
+	// Down velocity component (cm/s).
+	DownCentimetersPerSecond int32
+	// Speed is the 2D ground speed (cm/s).
+	SpeedCentimetersPerSecond int32
 	// Heading is the 2D heading of motion.
-	Heading unit.Angle
+	HeadingDegrees float64
 	// SpeedAccuracy is the speed accuracy estimate.
-	SpeedAccuracy unit.Speed
+	SpeedAccuracyCentimetersPerSecond uint32
 }
 
 func (v *VEL) unmarshal(b []byte) error {
@@ -53,35 +51,25 @@ func (v *VEL) unmarshal(b []byte) error {
 		return fmt.Errorf("unmarshal VEL: unexpected length: %d, expected: %d", len(b), lengthOfVEL)
 	}
 	v.TimeGPS = binary.LittleEndian.Uint32(b[indexOfTimeGPS : indexOfTimeGPS+lengthOfTimeGPS])
-	v.North = unit.Speed(
-		int32(binary.LittleEndian.Uint32(
-			b[indexOfVELNorth:indexOfVELNorth+lengthOfVELNorth],
-		)),
-	) * unit.Centi * unit.MetrePerSecond
-	v.East = unit.Speed(
-		int32(binary.LittleEndian.Uint32(
-			b[indexOfVELEast:indexOfVELEast+lengthOfVELEast],
-		)),
-	) * unit.Centi * unit.MetrePerSecond
-	v.Down = unit.Speed(
-		int32(binary.LittleEndian.Uint32(
-			b[indexOfVELDown:indexOfVELDown+lengthOfVELDown],
-		)),
-	) * unit.Centi * unit.MetrePerSecond
-	v.Speed = unit.Speed(
-		binary.LittleEndian.Uint32(
-			b[indexOfVELSpeed:indexOfVELSpeed+lengthOfVELSpeed],
-		),
-	) * unit.Centi * unit.MetrePerSecond
-	v.Heading = unit.Angle(
+	v.NorthCentimetersPerSecond = int32(binary.LittleEndian.Uint32(
+		b[indexOfVELNorth : indexOfVELNorth+lengthOfVELNorth],
+	))
+	v.EastCentimetersPerSecond = int32(binary.LittleEndian.Uint32(
+		b[indexOfVELEast : indexOfVELEast+lengthOfVELEast],
+	))
+	v.DownCentimetersPerSecond = int32(binary.LittleEndian.Uint32(
+		b[indexOfVELDown : indexOfVELDown+lengthOfVELDown],
+	))
+	v.SpeedCentimetersPerSecond = int32(binary.LittleEndian.Uint32(
+		b[indexOfVELSpeed : indexOfVELSpeed+lengthOfVELSpeed],
+	))
+	v.HeadingDegrees = float64(
 		int32(binary.LittleEndian.Uint32(
 			b[indexOfVELHeading:indexOfVELHeading+lengthOfVELHeading],
 		)),
-	) * unit.Degree * scalingOfVELHeading
-	v.SpeedAccuracy = unit.Speed(
-		binary.LittleEndian.Uint32(
-			b[indexOfVELSpeedAccuracy:indexOfVELSpeedAccuracy+lengthOfVELSpeedAccuracy],
-		),
-	) * unit.Centi * unit.MetrePerSecond
+	) * scalingOfVELHeading
+	v.SpeedAccuracyCentimetersPerSecond = binary.LittleEndian.Uint32(
+		b[indexOfVELSpeedAccuracy : indexOfVELSpeedAccuracy+lengthOfVELSpeedAccuracy],
+	)
 	return nil
 }

@@ -16,7 +16,7 @@ func TestMain(m *testing.M) {
 }
 
 func updateGoldenFilesFlag() (string, bool, string) {
-	return "update", false, "Update golden files."
+	return "update", true, "Update golden files."
 }
 
 func shouldUpdateGoldenFiles() bool {
