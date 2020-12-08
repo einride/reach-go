@@ -2,17 +2,14 @@ package erb
 
 import (
 	"bufio"
-	"context"
 	"encoding/binary"
 	"fmt"
 	"io"
-	"time"
 )
 
-// Client is an ERB client.
-type Client struct {
+// Scanner provides a convenient interface for reading and parsing ERB messages from a stream.
+type Scanner struct {
 	sc      *bufio.Scanner
-	conn    Conn
 	payload []byte
 	svIndex int
 	id      ID
@@ -25,37 +22,32 @@ type Client struct {
 	sv      SV
 }
 
-// Conn is an interface for the connection used by the ERB client.
-type Conn interface {
-	io.ReadCloser
-	SetReadDeadline(time.Time) error
+// NewScanner returns a new Scanner to read from r.
+func NewScanner(r io.Reader) *Scanner {
+	sc := bufio.NewScanner(r)
+	sc.Split(ScanPackets)
+	return &Scanner{sc: sc}
 }
 
-// NewClient creates a new ERB client with the provided connection.
-func NewClient(conn Conn) *Client {
-	sc := bufio.NewScanner(conn)
-	sc.Split(scanPackets)
-	return &Client{sc: sc, conn: conn}
-}
-
-// Receive an ERB message on the connection.
-func (c *Client) Receive(ctx context.Context) error {
-	deadline, _ := ctx.Deadline()
-	if err := c.conn.SetReadDeadline(deadline); err != nil {
-		return fmt.Errorf("erb client: receive: %w", err)
-	}
+// Scan advances the Scanner to the next message, whose ID will then be
+// available through the ID method.
+func (c *Scanner) Scan() (err error) {
+	defer func() {
+		if err != nil {
+			err = fmt.Errorf("scan ERB message: %w", err)
+		}
+	}()
 	if ok := c.sc.Scan(); !ok {
 		if c.sc.Err() == nil {
-			return fmt.Errorf("erb client: receive: %w", io.EOF)
+			return io.EOF
 		}
-		return fmt.Errorf("erb client: receive: %w", c.sc.Err())
+		return c.sc.Err()
 	}
 	c.id = ID(c.sc.Bytes()[indexOfMessageID])
 	lengthOfPayload := binary.LittleEndian.Uint16(
 		c.sc.Bytes()[indexOfPayloadLength : indexOfPayloadLength+lengthOfPayloadLength],
 	)
 	c.payload = c.sc.Bytes()[indexOfPayload : indexOfPayload+lengthOfPayload]
-	var err error
 	switch c.id {
 	case IDVER:
 		err = c.ver.unmarshal(c.payload)
@@ -73,7 +65,7 @@ func (c *Client) Receive(ctx context.Context) error {
 		c.svIndex = 0
 	}
 	if err != nil {
-		return fmt.Errorf("erb client: receive: %w", err)
+		return err
 	}
 	if c.id == IDVER {
 		isProtocolVersionSupported :=
@@ -82,7 +74,7 @@ func (c *Client) Receive(ctx context.Context) error {
 				c.ver.Low == SupportedProtocolVersionLow
 		if !isProtocolVersionSupported {
 			return fmt.Errorf(
-				"erb client: receive: unsupported protocol version: %d.%d.%d",
+				"unsupported protocol version: %d.%d.%d",
 				c.ver.High,
 				c.ver.Medium,
 				c.ver.Low,
@@ -92,7 +84,8 @@ func (c *Client) Receive(ctx context.Context) error {
 	return nil
 }
 
-func (c *Client) ScanSVI() bool {
+// ScanSVI advances to the next SV packet in an SVI packet.
+func (c *Scanner) ScanSVI() bool {
 	if c.id != IDSVI || c.svIndex >= int(c.svi.NumSVs) {
 		return false
 	}
@@ -104,45 +97,38 @@ func (c *Client) ScanSVI() bool {
 	return true
 }
 
-func (c *Client) ID() ID {
+func (c *Scanner) ID() ID {
 	return c.id
 }
 
-func (c *Client) VER() *VER {
-	return &c.ver
+func (c *Scanner) VER() VER {
+	return c.ver
 }
 
-func (c *Client) POS() *POS {
-	return &c.pos
+func (c *Scanner) POS() POS {
+	return c.pos
 }
 
-func (c *Client) STAT() *STAT {
-	return &c.stat
+func (c *Scanner) STAT() STAT {
+	return c.stat
 }
 
-func (c *Client) DOPS() *DOPS {
-	return &c.dops
+func (c *Scanner) DOPS() DOPS {
+	return c.dops
 }
 
-func (c *Client) VEL() *VEL {
-	return &c.vel
+func (c *Scanner) VEL() VEL {
+	return c.vel
 }
 
-func (c *Client) SVI() *SVI {
-	return &c.svi
+func (c *Scanner) SVI() SVI {
+	return c.svi
 }
 
-func (c *Client) SV() *SV {
-	return &c.sv
+func (c *Scanner) SV() SV {
+	return c.sv
 }
 
-func (c *Client) Bytes() []byte {
+func (c *Scanner) Bytes() []byte {
 	return c.sc.Bytes()
-}
-
-func (c *Client) Close() error {
-	if err := c.conn.Close(); err != nil {
-		return fmt.Errorf("erb client: close: %w", err)
-	}
-	return nil
 }
