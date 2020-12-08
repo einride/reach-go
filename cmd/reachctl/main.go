@@ -7,7 +7,7 @@ import (
 	"net"
 	"os"
 
-	"github.com/einride/reach-go/pkg/erb"
+	"github.com/einride/reach-go/erb"
 )
 
 func main() {
