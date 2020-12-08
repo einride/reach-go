@@ -1,359 +1,359 @@
-VER: &{TimeGPS:0 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
-STAT: &{TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
-DOPS: &{TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
-VEL: &{TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
-SVI: &{TimeGPS:0 NumSVs:0}
+VER: {TimeGPS:0 High:0 Medium:1 Low:0}
+POS: {TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
+STAT: {TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
+DOPS: {TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
+VEL: {TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
+SVI: {TimeGPS:0 NumSVs:0}
 ID(7): 45520717000000000000000000000000000000000000f6fd0000000011aa
-VER: &{TimeGPS:0 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
-STAT: &{TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
-DOPS: &{TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
-VEL: &{TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
-SVI: &{TimeGPS:0 NumSVs:0}
+VER: {TimeGPS:0 High:0 Medium:1 Low:0}
+POS: {TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
+STAT: {TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
+DOPS: {TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
+VEL: {TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
+SVI: {TimeGPS:0 NumSVs:0}
 ID(7): 45520717000000000000000000000000000000000000f6fd0000000011aa
-VER: &{TimeGPS:0 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
-STAT: &{TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
-DOPS: &{TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
-VEL: &{TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
-SVI: &{TimeGPS:0 NumSVs:0}
+VER: {TimeGPS:0 High:0 Medium:1 Low:0}
+POS: {TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
+STAT: {TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
+DOPS: {TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
+VEL: {TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
+SVI: {TimeGPS:0 NumSVs:0}
 ID(7): 45520717000000000000000000000000000000000000f6fd0000000011aa
-VER: &{TimeGPS:0 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
-STAT: &{TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
-DOPS: &{TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
-VEL: &{TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
-SVI: &{TimeGPS:0 NumSVs:0}
+VER: {TimeGPS:0 High:0 Medium:1 Low:0}
+POS: {TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
+STAT: {TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
+DOPS: {TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
+VEL: {TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
+SVI: {TimeGPS:0 NumSVs:0}
 ID(7): 45520717000000000000000000000000000000000000f6fd0000000011aa
-VER: &{TimeGPS:0 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
-STAT: &{TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
-DOPS: &{TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
-VEL: &{TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
-SVI: &{TimeGPS:0 NumSVs:0}
+VER: {TimeGPS:0 High:0 Medium:1 Low:0}
+POS: {TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
+STAT: {TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
+DOPS: {TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
+VEL: {TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
+SVI: {TimeGPS:0 NumSVs:0}
 ID(7): 45520717000000000000000000000000000000000000f6fd0000000011aa
-VER: &{TimeGPS:0 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
-STAT: &{TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
-DOPS: &{TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
-VEL: &{TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
-SVI: &{TimeGPS:0 NumSVs:0}
+VER: {TimeGPS:0 High:0 Medium:1 Low:0}
+POS: {TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
+STAT: {TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
+DOPS: {TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
+VEL: {TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
+SVI: {TimeGPS:0 NumSVs:0}
 ID(7): 45520717000000000000000000000000000000000000f6fd0000000011aa
-VER: &{TimeGPS:0 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
-STAT: &{TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
-DOPS: &{TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
-VEL: &{TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
-SVI: &{TimeGPS:0 NumSVs:0}
+VER: {TimeGPS:0 High:0 Medium:1 Low:0}
+POS: {TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
+STAT: {TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
+DOPS: {TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
+VEL: {TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
+SVI: {TimeGPS:0 NumSVs:0}
 ID(7): 45520717000000000000000000000000000000000000f6fd0000000011aa
-VER: &{TimeGPS:0 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
-STAT: &{TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
-DOPS: &{TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
-VEL: &{TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
-SVI: &{TimeGPS:0 NumSVs:0}
+VER: {TimeGPS:0 High:0 Medium:1 Low:0}
+POS: {TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
+STAT: {TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
+DOPS: {TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
+VEL: {TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
+SVI: {TimeGPS:0 NumSVs:0}
 ID(7): 45520717000000000000000000000000000000000000f6fd0000000011aa
-VER: &{TimeGPS:0 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
-STAT: &{TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
-DOPS: &{TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
-VEL: &{TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
-SVI: &{TimeGPS:0 NumSVs:0}
+VER: {TimeGPS:0 High:0 Medium:1 Low:0}
+POS: {TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
+STAT: {TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
+DOPS: {TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
+VEL: {TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
+SVI: {TimeGPS:0 NumSVs:0}
 ID(7): 45520717000000000000000000000000000000000000f6fd0000000011aa
-VER: &{TimeGPS:0 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
-STAT: &{TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
-DOPS: &{TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
-VEL: &{TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
-SVI: &{TimeGPS:0 NumSVs:0}
+VER: {TimeGPS:0 High:0 Medium:1 Low:0}
+POS: {TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
+STAT: {TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
+DOPS: {TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
+VEL: {TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
+SVI: {TimeGPS:0 NumSVs:0}
 ID(7): 45520717000000000000000000000000000000000000f6fd0000000011aa
-VER: &{TimeGPS:0 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
-STAT: &{TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
-DOPS: &{TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
-VEL: &{TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
-SVI: &{TimeGPS:0 NumSVs:0}
+VER: {TimeGPS:0 High:0 Medium:1 Low:0}
+POS: {TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
+STAT: {TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
+DOPS: {TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
+VEL: {TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
+SVI: {TimeGPS:0 NumSVs:0}
 ID(7): 45520717000000000000000000000000000000000000f6fd0000000011aa
-VER: &{TimeGPS:0 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
-STAT: &{TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
-DOPS: &{TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
-VEL: &{TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
-SVI: &{TimeGPS:0 NumSVs:0}
+VER: {TimeGPS:0 High:0 Medium:1 Low:0}
+POS: {TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
+STAT: {TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
+DOPS: {TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
+VEL: {TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
+SVI: {TimeGPS:0 NumSVs:0}
 ID(7): 45520717000000000000000000000000000000000000f6fd0000000011aa
-VER: &{TimeGPS:0 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
-STAT: &{TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
-DOPS: &{TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
-VEL: &{TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
-SVI: &{TimeGPS:0 NumSVs:0}
+VER: {TimeGPS:0 High:0 Medium:1 Low:0}
+POS: {TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
+STAT: {TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
+DOPS: {TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
+VEL: {TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
+SVI: {TimeGPS:0 NumSVs:0}
 ID(7): 45520717000000000000000000000000000000000000f6fd0000000011aa
-VER: &{TimeGPS:0 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
-STAT: &{TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
-DOPS: &{TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
-VEL: &{TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
-SVI: &{TimeGPS:0 NumSVs:0}
+VER: {TimeGPS:0 High:0 Medium:1 Low:0}
+POS: {TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
+STAT: {TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
+DOPS: {TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
+VEL: {TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
+SVI: {TimeGPS:0 NumSVs:0}
 ID(7): 45520717000000000000000000000000000000000000f6fd0000000011aa
-VER: &{TimeGPS:0 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
-STAT: &{TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
-DOPS: &{TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
-VEL: &{TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
-SVI: &{TimeGPS:0 NumSVs:0}
+VER: {TimeGPS:0 High:0 Medium:1 Low:0}
+POS: {TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
+STAT: {TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
+DOPS: {TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
+VEL: {TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
+SVI: {TimeGPS:0 NumSVs:0}
 ID(7): 45520717000000000000000000000000000000000000f6fd0000000011aa
-VER: &{TimeGPS:0 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
-STAT: &{TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
-DOPS: &{TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
-VEL: &{TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
-SVI: &{TimeGPS:0 NumSVs:0}
+VER: {TimeGPS:0 High:0 Medium:1 Low:0}
+POS: {TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
+STAT: {TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
+DOPS: {TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
+VEL: {TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
+SVI: {TimeGPS:0 NumSVs:0}
 ID(7): 45520717000000000000000000000000000000000000f6fd0000000011aa
-VER: &{TimeGPS:0 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
-STAT: &{TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
-DOPS: &{TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
-VEL: &{TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
-SVI: &{TimeGPS:0 NumSVs:0}
+VER: {TimeGPS:0 High:0 Medium:1 Low:0}
+POS: {TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
+STAT: {TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
+DOPS: {TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
+VEL: {TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
+SVI: {TimeGPS:0 NumSVs:0}
 ID(7): 45520717000000000000000000000000000000000000f6fd0000000011aa
-VER: &{TimeGPS:0 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
-STAT: &{TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
-DOPS: &{TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
-VEL: &{TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
-SVI: &{TimeGPS:0 NumSVs:0}
+VER: {TimeGPS:0 High:0 Medium:1 Low:0}
+POS: {TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
+STAT: {TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
+DOPS: {TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
+VEL: {TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
+SVI: {TimeGPS:0 NumSVs:0}
 ID(7): 45520717000000000000000000000000000000000000f6fd0000000011aa
-VER: &{TimeGPS:0 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
-STAT: &{TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
-DOPS: &{TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
-VEL: &{TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
-SVI: &{TimeGPS:0 NumSVs:0}
+VER: {TimeGPS:0 High:0 Medium:1 Low:0}
+POS: {TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
+STAT: {TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
+DOPS: {TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
+VEL: {TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
+SVI: {TimeGPS:0 NumSVs:0}
 ID(7): 45520717000000000000000000000000000000000000f6fd0000000011aa
-VER: &{TimeGPS:0 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
-STAT: &{TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
-DOPS: &{TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
-VEL: &{TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
-SVI: &{TimeGPS:0 NumSVs:0}
+VER: {TimeGPS:0 High:0 Medium:1 Low:0}
+POS: {TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
+STAT: {TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
+DOPS: {TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
+VEL: {TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
+SVI: {TimeGPS:0 NumSVs:0}
 ID(7): 45520717000000000000000000000000000000000000f6fd0000000011aa
-VER: &{TimeGPS:0 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
-STAT: &{TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
-DOPS: &{TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
-VEL: &{TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
-SVI: &{TimeGPS:0 NumSVs:0}
+VER: {TimeGPS:0 High:0 Medium:1 Low:0}
+POS: {TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
+STAT: {TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
+DOPS: {TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
+VEL: {TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
+SVI: {TimeGPS:0 NumSVs:0}
 ID(7): 45520717000000000000000000000000000000000000f6fd0000000011aa
-VER: &{TimeGPS:0 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
-STAT: &{TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
-DOPS: &{TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
-VEL: &{TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
-SVI: &{TimeGPS:0 NumSVs:0}
+VER: {TimeGPS:0 High:0 Medium:1 Low:0}
+POS: {TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
+STAT: {TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
+DOPS: {TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
+VEL: {TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
+SVI: {TimeGPS:0 NumSVs:0}
 ID(7): 45520717000000000000000000000000000000000000f6fd0000000011aa
-VER: &{TimeGPS:0 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
-STAT: &{TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
-DOPS: &{TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
-VEL: &{TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
-SVI: &{TimeGPS:0 NumSVs:0}
+VER: {TimeGPS:0 High:0 Medium:1 Low:0}
+POS: {TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
+STAT: {TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
+DOPS: {TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
+VEL: {TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
+SVI: {TimeGPS:0 NumSVs:0}
 ID(7): 45520717000000000000000000000000000000000000f6fd0000000011aa
-VER: &{TimeGPS:0 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
-STAT: &{TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
-DOPS: &{TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
-VEL: &{TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
-SVI: &{TimeGPS:0 NumSVs:0}
+VER: {TimeGPS:0 High:0 Medium:1 Low:0}
+POS: {TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
+STAT: {TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
+DOPS: {TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
+VEL: {TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
+SVI: {TimeGPS:0 NumSVs:0}
 ID(7): 45520717000000000000000000000000000000000000f6fd0000000011aa
-VER: &{TimeGPS:0 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
-STAT: &{TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
-DOPS: &{TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
-VEL: &{TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
-SVI: &{TimeGPS:0 NumSVs:0}
+VER: {TimeGPS:0 High:0 Medium:1 Low:0}
+POS: {TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
+STAT: {TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
+DOPS: {TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
+VEL: {TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
+SVI: {TimeGPS:0 NumSVs:0}
 ID(7): 45520717000000000000000000000000000000000000f6fd0000000011aa
-VER: &{TimeGPS:0 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
-STAT: &{TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
-DOPS: &{TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
-VEL: &{TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
-SVI: &{TimeGPS:0 NumSVs:0}
+VER: {TimeGPS:0 High:0 Medium:1 Low:0}
+POS: {TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
+STAT: {TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
+DOPS: {TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
+VEL: {TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
+SVI: {TimeGPS:0 NumSVs:0}
 ID(7): 45520717000000000000000000000000000000000000f6fd0000000011aa
-VER: &{TimeGPS:0 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
-STAT: &{TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
-DOPS: &{TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
-VEL: &{TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
-SVI: &{TimeGPS:0 NumSVs:0}
+VER: {TimeGPS:0 High:0 Medium:1 Low:0}
+POS: {TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
+STAT: {TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
+DOPS: {TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
+VEL: {TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
+SVI: {TimeGPS:0 NumSVs:0}
 ID(7): 45520717000000000000000000000000000000000000f6fd0000000011aa
-VER: &{TimeGPS:0 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
-STAT: &{TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
-DOPS: &{TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
-VEL: &{TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
-SVI: &{TimeGPS:0 NumSVs:0}
+VER: {TimeGPS:0 High:0 Medium:1 Low:0}
+POS: {TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
+STAT: {TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
+DOPS: {TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
+VEL: {TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
+SVI: {TimeGPS:0 NumSVs:0}
 ID(7): 45520717000000000000000000000000000000000000f6fd0000000011aa
-VER: &{TimeGPS:0 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
-STAT: &{TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
-DOPS: &{TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
-VEL: &{TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
-SVI: &{TimeGPS:0 NumSVs:0}
+VER: {TimeGPS:0 High:0 Medium:1 Low:0}
+POS: {TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
+STAT: {TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
+DOPS: {TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
+VEL: {TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
+SVI: {TimeGPS:0 NumSVs:0}
 ID(7): 45520717000000000000000000000000000000000000f6fd0000000011aa
-VER: &{TimeGPS:0 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
-STAT: &{TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
-DOPS: &{TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
-VEL: &{TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
-SVI: &{TimeGPS:0 NumSVs:0}
+VER: {TimeGPS:0 High:0 Medium:1 Low:0}
+POS: {TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
+STAT: {TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
+DOPS: {TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
+VEL: {TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
+SVI: {TimeGPS:0 NumSVs:0}
 ID(7): 45520717000000000000000000000000000000000000f6fd0000000011aa
-VER: &{TimeGPS:0 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
-STAT: &{TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
-DOPS: &{TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
-VEL: &{TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
-SVI: &{TimeGPS:0 NumSVs:0}
+VER: {TimeGPS:0 High:0 Medium:1 Low:0}
+POS: {TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
+STAT: {TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
+DOPS: {TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
+VEL: {TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
+SVI: {TimeGPS:0 NumSVs:0}
 ID(7): 45520717000000000000000000000000000000000000f6fd0000000011aa
-VER: &{TimeGPS:0 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
-STAT: &{TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
-DOPS: &{TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
-VEL: &{TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
-SVI: &{TimeGPS:0 NumSVs:0}
+VER: {TimeGPS:0 High:0 Medium:1 Low:0}
+POS: {TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
+STAT: {TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
+DOPS: {TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
+VEL: {TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
+SVI: {TimeGPS:0 NumSVs:0}
 ID(7): 45520717000000000000000000000000000000000000f6fd0000000011aa
-VER: &{TimeGPS:0 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
-STAT: &{TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
-DOPS: &{TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
-VEL: &{TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
-SVI: &{TimeGPS:0 NumSVs:0}
+VER: {TimeGPS:0 High:0 Medium:1 Low:0}
+POS: {TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
+STAT: {TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
+DOPS: {TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
+VEL: {TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
+SVI: {TimeGPS:0 NumSVs:0}
 ID(7): 45520717000000000000000000000000000000000000f6fd0000000011aa
-VER: &{TimeGPS:0 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
-STAT: &{TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
-DOPS: &{TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
-VEL: &{TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
-SVI: &{TimeGPS:0 NumSVs:0}
+VER: {TimeGPS:0 High:0 Medium:1 Low:0}
+POS: {TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
+STAT: {TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
+DOPS: {TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
+VEL: {TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
+SVI: {TimeGPS:0 NumSVs:0}
 ID(7): 45520717000000000000000000000000000000000000f6fd0000000011aa
-VER: &{TimeGPS:0 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
-STAT: &{TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
-DOPS: &{TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
-VEL: &{TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
-SVI: &{TimeGPS:0 NumSVs:0}
+VER: {TimeGPS:0 High:0 Medium:1 Low:0}
+POS: {TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
+STAT: {TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
+DOPS: {TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
+VEL: {TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
+SVI: {TimeGPS:0 NumSVs:0}
 ID(7): 45520717000000000000000000000000000000000000f6fd0000000011aa
-VER: &{TimeGPS:0 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
-STAT: &{TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
-DOPS: &{TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
-VEL: &{TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
-SVI: &{TimeGPS:0 NumSVs:0}
+VER: {TimeGPS:0 High:0 Medium:1 Low:0}
+POS: {TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
+STAT: {TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
+DOPS: {TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
+VEL: {TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
+SVI: {TimeGPS:0 NumSVs:0}
 ID(7): 45520717000000000000000000000000000000000000f6fd0000000011aa
-VER: &{TimeGPS:0 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
-STAT: &{TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
-DOPS: &{TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
-VEL: &{TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
-SVI: &{TimeGPS:0 NumSVs:0}
+VER: {TimeGPS:0 High:0 Medium:1 Low:0}
+POS: {TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
+STAT: {TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
+DOPS: {TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
+VEL: {TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
+SVI: {TimeGPS:0 NumSVs:0}
 ID(7): 45520717000000000000000000000000000000000000f6fd0000000011aa
-VER: &{TimeGPS:0 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
-STAT: &{TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
-DOPS: &{TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
-VEL: &{TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
-SVI: &{TimeGPS:0 NumSVs:0}
+VER: {TimeGPS:0 High:0 Medium:1 Low:0}
+POS: {TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
+STAT: {TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
+DOPS: {TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
+VEL: {TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
+SVI: {TimeGPS:0 NumSVs:0}
 ID(7): 45520717000000000000000000000000000000000000f6fd0000000011aa
-VER: &{TimeGPS:0 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
-STAT: &{TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
-DOPS: &{TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
-VEL: &{TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
-SVI: &{TimeGPS:0 NumSVs:0}
+VER: {TimeGPS:0 High:0 Medium:1 Low:0}
+POS: {TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
+STAT: {TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
+DOPS: {TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
+VEL: {TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
+SVI: {TimeGPS:0 NumSVs:0}
 ID(7): 45520717000000000000000000000000000000000000f6fd0000000011aa
-VER: &{TimeGPS:0 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
-STAT: &{TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
-DOPS: &{TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
-VEL: &{TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
-SVI: &{TimeGPS:0 NumSVs:0}
+VER: {TimeGPS:0 High:0 Medium:1 Low:0}
+POS: {TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
+STAT: {TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
+DOPS: {TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
+VEL: {TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
+SVI: {TimeGPS:0 NumSVs:0}
 ID(7): 45520717000000000000000000000000000000000000f6fd0000000011aa
-VER: &{TimeGPS:0 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
-STAT: &{TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
-DOPS: &{TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
-VEL: &{TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
-SVI: &{TimeGPS:0 NumSVs:0}
+VER: {TimeGPS:0 High:0 Medium:1 Low:0}
+POS: {TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
+STAT: {TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
+DOPS: {TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
+VEL: {TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
+SVI: {TimeGPS:0 NumSVs:0}
 ID(7): 45520717000000000000000000000000000000000000f6fd0000000011aa
-VER: &{TimeGPS:0 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
-STAT: &{TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
-DOPS: &{TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
-VEL: &{TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
-SVI: &{TimeGPS:0 NumSVs:0}
+VER: {TimeGPS:0 High:0 Medium:1 Low:0}
+POS: {TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
+STAT: {TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
+DOPS: {TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
+VEL: {TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
+SVI: {TimeGPS:0 NumSVs:0}
 ID(7): 45520717000000000000000000000000000000000000f6fd0000000011aa
-VER: &{TimeGPS:0 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
-STAT: &{TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
-DOPS: &{TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
-VEL: &{TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
-SVI: &{TimeGPS:0 NumSVs:0}
+VER: {TimeGPS:0 High:0 Medium:1 Low:0}
+POS: {TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
+STAT: {TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
+DOPS: {TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
+VEL: {TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
+SVI: {TimeGPS:0 NumSVs:0}
 ID(7): 45520717000000000000000000000000000000000000f6fd0000000011aa
-VER: &{TimeGPS:0 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
-STAT: &{TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
-DOPS: &{TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
-VEL: &{TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
-SVI: &{TimeGPS:0 NumSVs:0}
+VER: {TimeGPS:0 High:0 Medium:1 Low:0}
+POS: {TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
+STAT: {TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
+DOPS: {TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
+VEL: {TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
+SVI: {TimeGPS:0 NumSVs:0}
 ID(7): 45520717000000000000000000000000000000000000f6fd0000000011aa
-VER: &{TimeGPS:0 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
-STAT: &{TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
-DOPS: &{TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
-VEL: &{TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
-SVI: &{TimeGPS:0 NumSVs:0}
+VER: {TimeGPS:0 High:0 Medium:1 Low:0}
+POS: {TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
+STAT: {TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
+DOPS: {TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
+VEL: {TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
+SVI: {TimeGPS:0 NumSVs:0}
 ID(7): 45520717000000000000000000000000000000000000f6fd0000000011aa
-VER: &{TimeGPS:0 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
-STAT: &{TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
-DOPS: &{TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
-VEL: &{TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
-SVI: &{TimeGPS:0 NumSVs:0}
+VER: {TimeGPS:0 High:0 Medium:1 Low:0}
+POS: {TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
+STAT: {TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
+DOPS: {TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
+VEL: {TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
+SVI: {TimeGPS:0 NumSVs:0}
 ID(7): 45520717000000000000000000000000000000000000f6fd0000000011aa
-VER: &{TimeGPS:0 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
-STAT: &{TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
-DOPS: &{TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
-VEL: &{TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
-SVI: &{TimeGPS:0 NumSVs:0}
+VER: {TimeGPS:0 High:0 Medium:1 Low:0}
+POS: {TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
+STAT: {TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
+DOPS: {TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
+VEL: {TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
+SVI: {TimeGPS:0 NumSVs:0}
 ID(7): 45520717000000000000000000000000000000000000f6fd0000000011aa
-VER: &{TimeGPS:0 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
-STAT: &{TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
-DOPS: &{TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
-VEL: &{TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
-SVI: &{TimeGPS:0 NumSVs:0}
+VER: {TimeGPS:0 High:0 Medium:1 Low:0}
+POS: {TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
+STAT: {TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
+DOPS: {TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
+VEL: {TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
+SVI: {TimeGPS:0 NumSVs:0}
 ID(7): 45520717000000000000000000000000000000000000f6fd0000000011aa
-VER: &{TimeGPS:0 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
-STAT: &{TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
-DOPS: &{TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
-VEL: &{TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
-SVI: &{TimeGPS:0 NumSVs:0}
+VER: {TimeGPS:0 High:0 Medium:1 Low:0}
+POS: {TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
+STAT: {TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
+DOPS: {TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
+VEL: {TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
+SVI: {TimeGPS:0 NumSVs:0}
 ID(7): 45520717000000000000000000000000000000000000f6fd0000000011aa
-VER: &{TimeGPS:0 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
-STAT: &{TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
-DOPS: &{TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
-VEL: &{TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
-SVI: &{TimeGPS:0 NumSVs:0}
+VER: {TimeGPS:0 High:0 Medium:1 Low:0}
+POS: {TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
+STAT: {TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
+DOPS: {TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
+VEL: {TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
+SVI: {TimeGPS:0 NumSVs:0}
 ID(7): 45520717000000000000000000000000000000000000f6fd0000000011aa
-VER: &{TimeGPS:0 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
-STAT: &{TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
-DOPS: &{TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
-VEL: &{TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
-SVI: &{TimeGPS:0 NumSVs:0}
+VER: {TimeGPS:0 High:0 Medium:1 Low:0}
+POS: {TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
+STAT: {TimeGPS:0 WeekGPS:65014 FixType:NoFix HasFix:false NumSVs:0}
+DOPS: {TimeGPS:0 Geometric:0 Position:0 Vertical:0 Horizontal:0}
+VEL: {TimeGPS:0 NorthCentimetersPerSecond:0 EastCentimetersPerSecond:0 DownCentimetersPerSecond:0 SpeedCentimetersPerSecond:0 HeadingDegrees:0 SpeedAccuracyCentimetersPerSecond:0}
+SVI: {TimeGPS:0 NumSVs:0}
 ID(7): 45520717000000000000000000000000000000000000f6fd0000000011aa
-VER: &{TimeGPS:0 High:0 Medium:1 Low:0}
-POS: &{TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}
+VER: {TimeGPS:0 High:0 Medium:1 Low:0}
+POS: {TimeGPS:0 LongitudeDegrees:0 LatitudeDegrees:-90 AltitudeEllipsoidMeters:-6.378137e+06 AltitudeMeanSeaLevelMeters:-6.378107465999603e+06 HorizontalAccuracyMillimeters:0 VerticalAccuracyMillimeters:0}

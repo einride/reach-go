@@ -1,7 +1,6 @@
 package main
 
 import (
-	"context"
 	"encoding/hex"
 	"fmt"
 	"net"
@@ -24,9 +23,9 @@ func main() {
 			panic(err)
 		}
 	}()
-	sc := erb.NewClient(conn)
+	sc := erb.NewScanner(conn)
 	for {
-		if err := sc.Receive(context.Background()); err != nil {
+		if err := sc.Scan(); err != nil {
 			panic(err)
 		}
 		switch sc.ID() {

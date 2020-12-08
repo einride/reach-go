@@ -30,7 +30,8 @@ func lengthOfPacket(lengthOfPayload uint16) int {
 	return indexOfPayload + int(lengthOfPayload) + lengthOfChecksum
 }
 
-func scanPackets(data []byte, _ bool) (advance int, token []byte, err error) {
+// ScanPackets is a split function for a bufio.Scanner that returns each ERB packet.
+func ScanPackets(data []byte, _ bool) (advance int, token []byte, err error) {
 	if len(data) < indexOfPayloadLength+lengthOfPayloadLength {
 		return 0, nil, nil
 	}

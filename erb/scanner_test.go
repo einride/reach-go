@@ -3,7 +3,6 @@ package erb
 import (
 	"bufio"
 	"bytes"
-	"context"
 	"encoding/hex"
 	"errors"
 	"fmt"
@@ -12,7 +11,6 @@ import (
 	"strconv"
 	"strings"
 	"testing"
-	"time"
 
 	"gotest.tools/v3/assert"
 	"gotest.tools/v3/golden"
@@ -28,11 +26,10 @@ func TestScanner_HexDump(t *testing.T) {
 	} {
 		tt := tt
 		t.Run(tt.inputFile, func(t *testing.T) {
-			data := loadHexDump(t, tt.inputFile)
-			sc := NewClient(newMockConn(bytes.NewReader(data)))
+			sc := NewScanner(bytes.NewReader(loadHexDump(t, tt.inputFile)))
 			var buf bytes.Buffer
 			for {
-				if err := sc.Receive(context.Background()); err != nil {
+				if err := sc.Scan(); err != nil {
 					if errors.Is(err, io.EOF) {
 						break
 					}
@@ -58,7 +55,7 @@ func TestScanner_HexDump(t *testing.T) {
 					_, _ = fmt.Fprintf(&buf, "%v: %s\n", sc.ID(), hex.EncodeToString(sc.Bytes()))
 				}
 			}
-			golden.AssertBytes(t, buf.Bytes(), tt.goldenFile)
+			golden.Assert(t, buf.String(), tt.goldenFile)
 		})
 	}
 }
@@ -86,24 +83,4 @@ func loadHexDump(t *testing.T, filename string) []byte {
 	}
 	assert.NilError(t, sc.Err())
 	return data
-}
-
-type mockConn struct {
-	r io.Reader
-}
-
-func newMockConn(r io.Reader) *mockConn {
-	return &mockConn{r: r}
-}
-
-func (m mockConn) Read(p []byte) (n int, err error) {
-	return m.r.Read(p)
-}
-
-func (m mockConn) Close() error {
-	return nil
-}
-
-func (m mockConn) SetReadDeadline(time.Time) error {
-	return nil
 }
