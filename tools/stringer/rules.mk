@@ -1,6 +1,6 @@
 stringer_cwd := $(abspath $(dir $(lastword $(MAKEFILE_LIST))))
 stringer := $(stringer_cwd)/bin/stringer
-PATH := $(PATH):$(dir $(stringer))
+export PATH := $(PATH):$(dir $(stringer))
 
 $(stringer): $(stringer_cwd)/go.mod
 	$(info [stringer] building binary...)

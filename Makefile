@@ -1,3 +1,5 @@
+SHELL := /bin/bash
+
 all: \
 	commitlint \
 	go-generate \
@@ -7,10 +9,11 @@ all: \
 	go-mod-tidy \
 	git-verify-nodiff
 
-include tools/git-verify-nodiff/rules.mk
 include tools/commitlint/rules.mk
+include tools/git-verify-nodiff/rules.mk
 include tools/golangci-lint/rules.mk
 include tools/goreview/rules.mk
+include tools/semantic-release/rules.mk
 include tools/stringer/rules.mk
 
 .PHONY: clean
@@ -29,6 +32,6 @@ go-test:
 	@go test -count 1 -cover -race ./...
 
 .PHONY: go-generate
-go-generate:
+go-generate: $(stringer)
 	$(info [$@] generating Go code...)
 	@go generate ./...
