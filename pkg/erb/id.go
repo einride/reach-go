@@ -3,7 +3,7 @@ package erb
 // ID represents an ERB message ID.
 type ID uint8
 
-//go:generate gobin -m -run golang.org/x/tools/cmd/stringer -type=ID -trimprefix=ID
+//go:generate stringer -type=ID -trimprefix=ID
 
 const (
 	// IDVER is the ID of the VER message.
