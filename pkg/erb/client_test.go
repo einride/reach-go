@@ -8,7 +8,6 @@ import (
 	"errors"
 	"fmt"
 	"io"
-	"io/ioutil"
 	"os"
 	"strconv"
 	"strings"
@@ -16,6 +15,7 @@ import (
 	"time"
 
 	"gotest.tools/v3/assert"
+	"gotest.tools/v3/golden"
 )
 
 func TestScanner_HexDump(t *testing.T) {
@@ -23,8 +23,8 @@ func TestScanner_HexDump(t *testing.T) {
 		inputFile  string
 		goldenFile string
 	}{
-		{inputFile: "testdata/hexdump.empty", goldenFile: "testdata/hexdump.empty.golden"},
-		{inputFile: "testdata/hexdump.asta", goldenFile: "testdata/hexdump.asta.golden"},
+		{inputFile: "testdata/hexdump.empty", goldenFile: "hexdump.empty.golden"},
+		{inputFile: "testdata/hexdump.asta", goldenFile: "hexdump.asta.golden"},
 	} {
 		tt := tt
 		t.Run(tt.inputFile, func(t *testing.T) {
@@ -58,10 +58,7 @@ func TestScanner_HexDump(t *testing.T) {
 					_, _ = fmt.Fprintf(&buf, "%v: %s\n", sc.ID(), hex.EncodeToString(sc.Bytes()))
 				}
 			}
-			if shouldUpdateGoldenFiles() {
-				assert.NilError(t, ioutil.WriteFile(tt.goldenFile, buf.Bytes(), 0644))
-			}
-			requireGoldenFileContent(t, tt.goldenFile, buf.String())
+			golden.AssertBytes(t, buf.Bytes(), tt.goldenFile)
 		})
 	}
 }
