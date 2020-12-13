@@ -1,4 +1,4 @@
-module github.com/einride/reach-go
+module go.einride.tech/reach
 
 go 1.14
 
