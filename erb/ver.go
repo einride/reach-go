@@ -2,7 +2,6 @@ package erb
 
 import (
 	"encoding/binary"
-	"fmt"
 )
 
 // structure of VER message.
@@ -33,13 +32,10 @@ type VER struct {
 	Low uint8
 }
 
-func (v *VER) unmarshal(b []byte) error {
-	if len(b) != lengthOfVER {
-		return fmt.Errorf("unmarshal VER: unexpected length: %d, expected: %d", len(b), lengthOfVER)
-	}
+func (v *VER) unmarshalPayload(b []byte) {
+	_ = b[lengthOfVER-1] // early bounds check
 	v.TimeGPS = binary.LittleEndian.Uint32(b[indexOfTimeGPS : indexOfTimeGPS+lengthOfTimeGPS])
 	v.High = b[indexOfVERHigh]
 	v.Medium = b[indexOfVERMedium]
 	v.Low = b[indexOfVERLow]
-	return nil
 }

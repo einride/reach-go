@@ -24,10 +24,7 @@ func main() {
 		}
 	}()
 	sc := erb.NewScanner(conn)
-	for {
-		if err := sc.Scan(); err != nil {
-			panic(err)
-		}
+	for sc.Scan() {
 		switch sc.ID() {
 		case erb.IDVER:
 			fmt.Printf("%v: %+v\n", sc.ID(), sc.VER())
@@ -47,5 +44,8 @@ func main() {
 		default:
 			fmt.Printf("%v: %s\n", sc.ID(), hex.EncodeToString(sc.Bytes()))
 		}
+	}
+	if sc.Err() != nil {
+		panic(sc.Err())
 	}
 }

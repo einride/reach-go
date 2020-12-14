@@ -2,7 +2,6 @@ package erb
 
 import (
 	"encoding/binary"
-	"fmt"
 )
 
 // structure of DOPS message.
@@ -42,10 +41,8 @@ type DOPS struct {
 	Horizontal float64
 }
 
-func (d *DOPS) unmarshal(b []byte) error {
-	if len(b) != lengthOfDOPS {
-		return fmt.Errorf("unmarshal DOPS: unexpected length: %d, expected: %d", len(b), lengthOfDOPS)
-	}
+func (d *DOPS) unmarshalPayload(b []byte) {
+	_ = b[lengthOfDOPS-1] // early bounds check
 	d.TimeGPS = binary.LittleEndian.Uint32(b[indexOfTimeGPS : indexOfTimeGPS+lengthOfTimeGPS])
 	d.Geometric = scaleOfDOPS * float64(
 		binary.LittleEndian.Uint16(b[indexOfDOPSGeo:indexOfDOPSGeo+lengthOfDOPSGeo]),
@@ -59,5 +56,4 @@ func (d *DOPS) unmarshal(b []byte) error {
 	d.Horizontal = scaleOfDOPS * float64(
 		binary.LittleEndian.Uint16(b[indexOfDOPSHorizontal:indexOfDOPSHorizontal+lengthOfDOPSHorizontal]),
 	)
-	return nil
 }
