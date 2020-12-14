@@ -2,7 +2,6 @@ package erb
 
 import (
 	"encoding/binary"
-	"fmt"
 	"math"
 )
 
@@ -46,10 +45,8 @@ type POS struct {
 	VerticalAccuracyMillimeters uint32
 }
 
-func (p *POS) unmarshal(b []byte) error {
-	if len(b) != lengthOfPOS {
-		return fmt.Errorf("unmarshal POS: unexpected length: %d, expected: %d", len(b), lengthOfPOS)
-	}
+func (p *POS) unmarshalPayload(b []byte) {
+	_ = b[lengthOfPOS-1] // early bounds check
 	p.TimeGPS = binary.LittleEndian.Uint32(b[indexOfTimeGPS : indexOfTimeGPS+lengthOfTimeGPS])
 	p.LongitudeDegrees = math.Float64frombits(
 		binary.LittleEndian.Uint64(
@@ -77,5 +74,4 @@ func (p *POS) unmarshal(b []byte) error {
 	p.VerticalAccuracyMillimeters = binary.LittleEndian.Uint32(
 		b[indexOfPOSVerticalAccuracy : indexOfPOSVerticalAccuracy+lengthOfPOSVerticalAccuracy],
 	)
-	return nil
 }

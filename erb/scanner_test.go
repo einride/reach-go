@@ -4,9 +4,7 @@ import (
 	"bufio"
 	"bytes"
 	"encoding/hex"
-	"errors"
 	"fmt"
-	"io"
 	"os"
 	"strconv"
 	"strings"
@@ -28,13 +26,7 @@ func TestScanner_HexDump(t *testing.T) {
 		t.Run(tt.inputFile, func(t *testing.T) {
 			sc := NewScanner(bytes.NewReader(loadHexDump(t, tt.inputFile)))
 			var buf bytes.Buffer
-			for {
-				if err := sc.Scan(); err != nil {
-					if errors.Is(err, io.EOF) {
-						break
-					}
-					assert.NilError(t, err)
-				}
+			for sc.Scan() {
 				switch sc.ID() {
 				case IDVER:
 					_, _ = fmt.Fprintf(&buf, "%v: %+v\n", sc.ID(), sc.VER())
@@ -55,6 +47,7 @@ func TestScanner_HexDump(t *testing.T) {
 					_, _ = fmt.Fprintf(&buf, "%v: %s\n", sc.ID(), hex.EncodeToString(sc.Bytes()))
 				}
 			}
+			assert.NilError(t, sc.Err())
 			golden.Assert(t, buf.String(), tt.goldenFile)
 		})
 	}

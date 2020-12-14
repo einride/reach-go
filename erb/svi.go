@@ -2,7 +2,6 @@ package erb
 
 import (
 	"encoding/binary"
-	"fmt"
 )
 
 // structure of SVI message.
@@ -53,14 +52,11 @@ type SVI struct {
 	NumSVs uint8
 }
 
-func (s *SVI) unmarshal(b []byte) error {
+func (s *SVI) unmarshalPayload(b []byte) {
 	const expectedLength = indexOfNumSVs + lengthOfNumSVs
-	if len(b) < expectedLength {
-		return fmt.Errorf("unmarshal SVI: unexpected length: %d, expected: %d", len(b), expectedLength)
-	}
+	_ = b[expectedLength-1] // early bounds check
 	s.TimeGPS = binary.LittleEndian.Uint32(b[indexOfTimeGPS : indexOfTimeGPS+lengthOfTimeGPS])
 	s.NumSVs = b[indexOfNumSVs]
-	return nil
 }
 
 // SV message contains information about a single observation satellite.
@@ -83,12 +79,10 @@ type SV struct {
 	ElevationDegrees float64
 }
 
-func (s *SV) unmarshal(b []byte, i int) error {
+func (s *SV) unmarshalPayload(b []byte, i int) {
 	offset := i * lengthOfSV
 	expectedLength := indexOfSV + offset + lengthOfSV
-	if len(b) < expectedLength {
-		return fmt.Errorf("unmarshal SV: unexpected length: %d, expected: %d", len(b), expectedLength)
-	}
+	_ = b[expectedLength-1] // early bounds check
 	s.ID = b[offset+indexOfSVID]
 	s.Type = SVType(b[offset+indexOfSVType])
 	s.SignalStrength = scaleOfSVSignalStrength * float64(binary.LittleEndian.Uint16(
@@ -109,5 +103,4 @@ func (s *SV) unmarshal(b []byte, i int) error {
 	s.ElevationDegrees = scaleOfSVElevation * float64(binary.LittleEndian.Uint16(
 		b[offset+indexOfSVElevation:offset+indexOfSVElevation+lengthOfSVElevation],
 	))
-	return nil
 }

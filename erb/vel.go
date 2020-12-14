@@ -2,7 +2,6 @@ package erb
 
 import (
 	"encoding/binary"
-	"fmt"
 )
 
 // structure of VEL message.
@@ -46,10 +45,8 @@ type VEL struct {
 	SpeedAccuracyCentimetersPerSecond uint32
 }
 
-func (v *VEL) unmarshal(b []byte) error {
-	if len(b) != lengthOfVEL {
-		return fmt.Errorf("unmarshal VEL: unexpected length: %d, expected: %d", len(b), lengthOfVEL)
-	}
+func (v *VEL) unmarshalPayload(b []byte) {
+	_ = b[lengthOfVEL-1]
 	v.TimeGPS = binary.LittleEndian.Uint32(b[indexOfTimeGPS : indexOfTimeGPS+lengthOfTimeGPS])
 	v.NorthCentimetersPerSecond = int32(binary.LittleEndian.Uint32(
 		b[indexOfVELNorth : indexOfVELNorth+lengthOfVELNorth],
@@ -71,5 +68,4 @@ func (v *VEL) unmarshal(b []byte) error {
 	v.SpeedAccuracyCentimetersPerSecond = binary.LittleEndian.Uint32(
 		b[indexOfVELSpeedAccuracy : indexOfVELSpeedAccuracy+lengthOfVELSpeedAccuracy],
 	)
-	return nil
 }

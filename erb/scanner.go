@@ -3,13 +3,13 @@ package erb
 import (
 	"bufio"
 	"encoding/binary"
-	"fmt"
 	"io"
 )
 
 // Scanner provides a convenient interface for reading and parsing ERB messages from a stream.
 type Scanner struct {
 	sc      *bufio.Scanner
+	err     error
 	payload []byte
 	svIndex int
 	id      ID
@@ -31,57 +31,49 @@ func NewScanner(r io.Reader) *Scanner {
 
 // Scan advances the Scanner to the next message, whose ID will then be
 // available through the ID method.
-func (c *Scanner) Scan() (err error) {
-	defer func() {
-		if err != nil {
-			err = fmt.Errorf("scan ERB message: %w", err)
-		}
-	}()
+func (c *Scanner) Scan() bool {
+	if c.err != nil {
+		return false
+	}
 	if ok := c.sc.Scan(); !ok {
-		if c.sc.Err() == nil {
-			return io.EOF
+		c.err = c.sc.Err()
+		if c.err == nil {
+			c.err = io.EOF
 		}
-		return c.sc.Err()
+		return false
 	}
 	c.id = ID(c.sc.Bytes()[indexOfMessageID])
 	lengthOfPayload := binary.LittleEndian.Uint16(
 		c.sc.Bytes()[indexOfPayloadLength : indexOfPayloadLength+lengthOfPayloadLength],
 	)
 	c.payload = c.sc.Bytes()[indexOfPayload : indexOfPayload+lengthOfPayload]
+	// assume the scan function has already validated packet types
 	switch c.id {
 	case IDVER:
-		err = c.ver.unmarshal(c.payload)
+		c.ver.unmarshalPayload(c.payload)
 	case IDPOS:
-		err = c.pos.unmarshal(c.payload)
+		c.pos.unmarshalPayload(c.payload)
 	case IDSTAT:
-		err = c.stat.unmarshal(c.payload)
+		c.stat.unmarshalPayload(c.payload)
 	case IDDOPS:
-		err = c.dops.unmarshal(c.payload)
+		c.dops.unmarshalPayload(c.payload)
 	case IDVEL:
-		err = c.vel.unmarshal(c.payload)
+		c.vel.unmarshalPayload(c.payload)
 	case IDSVI:
-		err = c.svi.unmarshal(c.payload)
+		c.svi.unmarshalPayload(c.payload)
 		c.sv = SV{}
 		c.svIndex = 0
+	default:
+		// allow unknown packets
 	}
-	if err != nil {
-		return err
+	return true
+}
+
+func (c *Scanner) Err() error {
+	if c.err == io.EOF {
+		return nil
 	}
-	if c.id == IDVER {
-		isProtocolVersionSupported :=
-			c.ver.High == SupportedProtocolVersionHigh &&
-				c.ver.Medium == SupportedProtocolVersionMedium &&
-				c.ver.Low == SupportedProtocolVersionLow
-		if !isProtocolVersionSupported {
-			return fmt.Errorf(
-				"unsupported protocol version: %d.%d.%d",
-				c.ver.High,
-				c.ver.Medium,
-				c.ver.Low,
-			)
-		}
-	}
-	return nil
+	return c.err
 }
 
 // ScanSVI advances to the next SV packet in an SVI packet.
@@ -89,10 +81,7 @@ func (c *Scanner) ScanSVI() bool {
 	if c.id != IDSVI || c.svIndex >= int(c.svi.NumSVs) {
 		return false
 	}
-	if err := c.sv.unmarshal(c.payload, c.svIndex); err != nil {
-		// this should not happen if our scan function is implemented properly
-		return false
-	}
+	c.sv.unmarshalPayload(c.payload, c.svIndex)
 	c.svIndex++
 	return true
 }

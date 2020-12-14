@@ -2,7 +2,6 @@ package erb
 
 import (
 	"encoding/binary"
-	"fmt"
 )
 
 // structure of STAT message.
@@ -35,21 +34,10 @@ type STAT struct {
 	NumSVs uint8
 }
 
-func (s *STAT) unmarshal(b []byte) error {
-	if len(b) != lengthOfSTAT {
-		return fmt.Errorf("unmarshal STAT: unexpected length: %d, expected: %d", len(b), lengthOfSTAT)
-	}
+func (s *STAT) unmarshalPayload(b []byte) {
 	s.TimeGPS = binary.LittleEndian.Uint32(b[indexOfTimeGPS : indexOfTimeGPS+lengthOfTimeGPS])
 	s.WeekGPS = binary.LittleEndian.Uint16(b[indexOfSTATWeekGPS : indexOfSTATWeekGPS+lengthOfSTATWeekGPS])
 	s.FixType = FixType(b[indexOfSTATFixType])
-	switch b[indexOfSTATHasFix] {
-	case 0x00:
-		s.HasFix = false
-	case 0x01:
-		s.HasFix = true
-	default:
-		return fmt.Errorf("unmarshal status: unexpected value of fix status: %d", b[indexOfSTATHasFix])
-	}
+	s.HasFix = b[indexOfSTATHasFix] == 1
 	s.NumSVs = b[indexOfSTATNumSatellites]
-	return nil
 }

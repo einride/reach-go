@@ -22,11 +22,11 @@ const (
 	lengthOfChecksum      = 2
 )
 
-func indexOfChecksum(lengthOfPayload uint16) int {
+func calculateIndexOfChecksum(lengthOfPayload uint16) int {
 	return indexOfPayload + int(lengthOfPayload)
 }
 
-func lengthOfPacket(lengthOfPayload uint16) int {
+func calculateLengthOfPacket(lengthOfPayload uint16) int {
 	return indexOfPayload + int(lengthOfPayload) + lengthOfChecksum
 }
 
@@ -44,23 +44,30 @@ func ScanPackets(data []byte, _ bool) (advance int, token []byte, err error) {
 		return i, nil, nil
 	}
 	// parse payload length
-	payloadLength := binary.LittleEndian.Uint16(data[indexOfPayloadLength : indexOfPayloadLength+lengthOfPayloadLength])
-	packetLength := lengthOfPacket(payloadLength)
-	if len(data) < packetLength {
+	lengthOfPayload := binary.LittleEndian.Uint16(
+		data[indexOfPayloadLength : indexOfPayloadLength+lengthOfPayloadLength],
+	)
+	lengthOfPacket := calculateLengthOfPacket(lengthOfPayload)
+	if len(data) < lengthOfPacket {
 		return 0, nil, nil
 	}
-	packet := data[:packetLength]
+	packet := data[:lengthOfPacket]
+	payload := data[indexOfPayload : indexOfPayload+lengthOfPayload]
+	messageID := ID(packet[indexOfMessageID])
 	// verify checksum
-	expectedChecksum := fletcher(packet[indexOfMessageID:indexOfChecksum(payloadLength)])
-	actualChecksum := binary.LittleEndian.Uint16(packet[indexOfChecksum(payloadLength):])
+	expectedChecksum := fletcher(packet[indexOfMessageID:calculateIndexOfChecksum(lengthOfPayload)])
+	actualChecksum := binary.LittleEndian.Uint16(packet[calculateIndexOfChecksum(lengthOfPayload):])
 	if expectedChecksum != actualChecksum {
 		return 0, nil, fmt.Errorf(
-			"checksum mismatch: expected: 0x%x, actual: 0x%x",
+			"checksum mismatch (expected 0x%x but got 0x%x)",
 			expectedChecksum,
 			actualChecksum,
 		)
 	}
-	return packetLength, packet, nil
+	if err := validatePayload(messageID, payload); err != nil {
+		return 0, nil, err
+	}
+	return lengthOfPacket, packet, nil
 }
 
 func fletcher(data []byte) uint16 {
@@ -70,4 +77,88 @@ func fletcher(data []byte) uint16 {
 		b += a
 	}
 	return uint16(b)<<8 | uint16(a)
+}
+
+func validatePayload(messageID ID, payload []byte) error {
+	switch messageID {
+	case IDVER:
+		return validatePayloadVER(payload)
+	case IDPOS:
+		return validatePayloadPOS(payload)
+	case IDSTAT:
+		return validatePayloadSTAT(payload)
+	case IDDOPS:
+		return validatePayloadDOPS(payload)
+	case IDVEL:
+		return validatePayloadVEL(payload)
+	case IDSVI:
+		return validatePayloadSVI(payload)
+	default:
+		return nil // allow unknown packets
+	}
+}
+
+func validatePayloadVER(payload []byte) error {
+	if len(payload) != lengthOfVER {
+		return fmt.Errorf("validate VER payload: illegal length %d (expected %d)", len(payload), lengthOfVER)
+	}
+	var ver VER
+	ver.unmarshalPayload(payload)
+	isProtocolVersionSupported :=
+		ver.High == SupportedProtocolVersionHigh &&
+			ver.Medium == SupportedProtocolVersionMedium &&
+			ver.Low == SupportedProtocolVersionLow
+	if !isProtocolVersionSupported {
+		return fmt.Errorf(
+			"validate VER payload: unsupported protocol version %d.%d.%d",
+			ver.High,
+			ver.Medium,
+			ver.Low,
+		)
+	}
+	return nil
+}
+
+func validatePayloadPOS(payload []byte) error {
+	if len(payload) != lengthOfPOS {
+		return fmt.Errorf("validate %v payload: illegal length %d (expected %d)", IDPOS, len(payload), lengthOfPOS)
+	}
+	return nil
+}
+
+func validatePayloadSTAT(payload []byte) error {
+	if len(payload) != lengthOfSTAT {
+		return fmt.Errorf("validate %v payload: illegal length %d (expected %d)", IDSTAT, len(payload), lengthOfSTAT)
+	}
+	return nil
+}
+
+func validatePayloadDOPS(payload []byte) error {
+	if len(payload) != lengthOfDOPS {
+		return fmt.Errorf("validate %v payload: illegal length %d (expected %d)", IDDOPS, len(payload), lengthOfDOPS)
+	}
+	return nil
+}
+
+func validatePayloadVEL(payload []byte) error {
+	if len(payload) != lengthOfVEL {
+		return fmt.Errorf("validate %v payload: illegal length %d (expected %d)", IDVEL, len(payload), lengthOfVEL)
+	}
+	return nil
+}
+
+func validatePayloadSVI(payload []byte) error {
+	const minLength = indexOfNumSVs + lengthOfNumSVs
+	if len(payload) < minLength {
+		return fmt.Errorf(
+			"validate %v payload: illegal length %d (expected minimum %d)", IDSVI, len(payload), lengthOfSVI,
+		)
+	}
+	var svi SVI
+	svi.unmarshalPayload(payload)
+	expectedLength := minLength + lengthOfSV*int(svi.NumSVs)
+	if len(payload) != expectedLength {
+		return fmt.Errorf("validate %v payload: illegal length %d (expected %d)", IDSVI, len(payload), expectedLength)
+	}
+	return nil
 }
