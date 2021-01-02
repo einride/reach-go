@@ -20,18 +20,20 @@ include tools/stringer/rules.mk
 clean:
 	$(info [$@] cleaning generated files...)
 	@find -name '*_string.go' -exec rm {} \+
+	@rm -rf build
 
 .PHONY: go-mod-tidy
 go-mod-tidy:
 	$(info [$@] tidying Go module files...)
 	@go mod tidy -v
 
-.PHONY: go-test
-go-test:
-	$(info [$@] running Go tests...)
-	@go test -count 1 -cover -race ./...
-
 .PHONY: go-generate
 go-generate: $(stringer)
 	$(info [$@] generating Go code...)
 	@go generate ./...
+
+.PHONY: go-test
+go-test:
+	$(info [$@] running Go tests...)
+	@mkdir -p build/coverage
+	@go test -short -race -coverprofile=build/coverage/$@.txt -covermode=atomic ./...
